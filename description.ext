@@ -1,0 +1,46 @@
+Author="Nichols (Task Force Red)";
+OnLoadName = "Tanoa Takedown";
+OnLoadMission = "Tanoa Archipelago; Fiji";
+overviewPicture = "USSF leading patrol.jpg";
+
+enableDebugConsole = 1;
+cba_settings_hasSettingsFile = 1;
+
+respawn = 3;
+respawndelay = 45;
+respawnOnStart = 0;
+respawnDialog = 0;
+DisabledAI = true;
+
+class Extended_InitPost_EventHandlers {
+     class CAManBase {
+		init = "_this call (compile preprocessFileLineNumbers 'postInitXEH.sqf')";
+	};
+};
+
+class CfgFunctions
+{
+	#include "INC_undercover\cfgFunctions.hpp"
+	#include "vcom\cfgFunctions.hpp"
+};
+
+class CfgRemoteExec
+{
+   class Functions
+   {
+       mode = 2;
+       jip = 1;
+       #include "INC_undercover\functionsWhitelist.hpp"
+   };
+};
+
+class Extended_PreInit_EventHandlers {
+	VCM_CBASettings = call compile preprocessFileLineNumbers "Vcom\Functions\VCM_CBASettings.sqf";
+};
+
+class Header
+{
+	gameType = COOP; // Game type, see 'class' columns in the table below
+	minPlayers = 4; //min # of players the mission supports
+	maxPlayers = 60; //max # of players the mission supports
+};
