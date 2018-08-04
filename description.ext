@@ -3,6 +3,13 @@ OnLoadName = "Tanoa Takedown";
 OnLoadMission = "Tanoa Archipelago; Fiji";
 overviewPicture = "USSF leading patrol.jpg";
 
+class Header
+{
+	gameType = COOP; // Game type, see 'class' columns in the table below
+	minPlayers = 4; //min # of players the mission supports
+	maxPlayers = 60; //max # of players the mission supports
+};
+
 enableDebugConsole = 1;
 cba_settings_hasSettingsFile = 1;
 
@@ -36,11 +43,4 @@ class CfgRemoteExec
 
 class Extended_PreInit_EventHandlers {
 	VCM_CBASettings = call compile preprocessFileLineNumbers "Vcom\Functions\VCM_CBASettings.sqf";
-};
-
-class Header
-{
-	gameType = COOP; // Game type, see 'class' columns in the table below
-	minPlayers = 4; //min # of players the mission supports
-	maxPlayers = 60; //max # of players the mission supports
 };

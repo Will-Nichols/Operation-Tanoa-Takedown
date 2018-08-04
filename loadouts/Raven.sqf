@@ -39,7 +39,7 @@ _this addItemToVest "SmokeShellRed";
 _this addItemToVest "SmokeShellGreen";
 _this addItemToVest "SmokeShellBlue";
 for "_i" from 1 to 2 do {_this addItemToVest "SmokeShell";};
-for "_i" from 1 to 4 do {_this addItemToVest "hlc_15Rnd_9x19_JHP_P226";};
+for "_i" from 1 to 4 do {_this addItemToVest "hlc_13Rnd_9x19_B_P228";};
 _this addHeadgear "H_PilotHelmetHeli_B";
 _this addGoggles "G_Aviator";
 
