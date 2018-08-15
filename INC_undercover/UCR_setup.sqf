@@ -44,14 +44,14 @@ _civilianUniforms = [];
 _civilianHeadgear = [];
 
 //(Array of classnames) Safe backpacks (will automatically include civilian backpack classes - useful if faction has randomisation script or to add items that are not used by the faction)
-_civilianBackpacks = ["B_FieldPack_blk","B_FieldPack_cbr","B_FieldPack_khk","G_FieldPack_Medic","B_Carryall_cbr","B_Carryall_khk","B_TacticalPack_blk","B_TacticalPack_rgr","B_TacticalPack_oli","B_Kitbag_cbr","B_Kitbag_rgr","B_Kitbag_sgg"];
+_civilianBackpacks = ["B_FieldPack_blk","B_FieldPack_khk","B_TacticalPack_blk"];
 
 //(Array of classnames) Safe vehicles to drive in (automatically includes vehicles from the civilian factions above).
 _civilianVehicleArray = [];
 
 _HMDallowed = false; //(Bool - true or false) Are HMDs (night vision goggles etc.) safe to wear for units pretending to be civilians? Set to false if wearing HMDs will cause suspicion (must be stored in backpack).
 
-_noOffRoad = false; //Civilian vehicles driving more than 50 meters from the nearest road will be considered hostile
+_noOffRoad = true; //Civilian vehicles driving more than 50 meters from the nearest road will be considered hostile
 
 //-------------------------Enemy Disguise settings-------------------------
 _incogFactions = ["45th_Airborne"]; //Array of enemy factions whose items and vehicles will allow the player to impersonate the enemy
@@ -78,13 +78,13 @@ You can also dismiss your new teammates and they will leave your group and carry
 */
 
 _civRecruitEnabled = true;          //(Bool - true or false) Set this to false to prevent undercover units from recruiting civilians
-_armedCivPercentage = 15;           //(Number - 0 to 100) Max percentage of civilians armed with weapons from the array below, either on their person or in their backpacks (will only work if _civRecruitEnabled is set to true, otherwise this is ignored)
+_armedCivPercentage = 10;           //(Number - 0 to 100) Max percentage of civilians armed with weapons from the array below, either on their person or in their backpacks (will only work if _civRecruitEnabled is set to true, otherwise this is ignored)
 
 //Weapon classnames for armed civilians (array of classnames)
 _civWpnArray = ["vme_pla_qsw06"];
 
 //Items that civilians may carry
-_civItemArray = ["ACE_Cellphone","ACE_Banana","ACE_Flashlight_KSF1","ACE_SpraypaintBlack","itemRadio","ACE_RangeCard","ACE_key_civ","ACE_key_lockpick","ACE_fieldDressing","IEDUrbanSmall_F","IEDUrbanSmall_F"];
+_civItemArray = ["ACE_Cellphone","ACE_Banana","ACE_Flashlight_KSF1","ACE_SpraypaintBlack","itemRadio","ACE_key_civ","ACE_key_lockpick","ACE_fieldDressing","IEDUrbanSmall_F","IEDUrbanSmall_F"];
 
 //Civilian backpack classes (array of classnames)
-_civPackArray = ["B_FieldPack_blk","B_FieldPack_cbr","B_FieldPack_khk","B_FieldPack_oucamo","B_Carryall_cbr"];
+_civPackArray = ["B_FieldPack_blk","B_FieldPack_khk","B_TacticalPack_blk"];
