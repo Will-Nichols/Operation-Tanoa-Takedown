@@ -62,10 +62,10 @@ force force ace_explosives_requireSpecialist = false;
 
 // ACE Fragmentation Simulation
 force force ace_frag_enabled = true;
-force force ace_frag_maxTrack = 25;
-force force ace_frag_maxTrackPerFrame = 25;
+force force ace_frag_maxTrack = 5;
+force force ace_frag_maxTrackPerFrame = 5;
 force force ace_frag_reflectionsEnabled = true;
-force force ace_frag_spallEnabled = true;
+force force ace_frag_spallEnabled = false;
 
 // ACE Goggles
 force force ace_goggles_effects = 2;
@@ -214,12 +214,12 @@ force force ace_nametags_showVehicleCrewInfo = true;
 force force ace_nametags_tagSize = 2;
 
 // ACE Nightvision
-force force ace_nightvision_aimDownSightsBlur = 0.216132;
-force force ace_nightvision_disableNVGsWithSights = false;
-force force ace_nightvision_effectScaling = 0.216132;
-force force ace_nightvision_fogScaling = 0.216132;
-force force ace_nightvision_noiseScaling = 0.216132;
-force force ace_nightvision_shutterEffects = true;
+force ace_nightvision_aimDownSightsBlur = 0.18271;
+force ace_nightvision_disableNVGsWithSights = false;
+force ace_nightvision_effectScaling = 0;
+force ace_nightvision_fogScaling = 0.0713011;
+force ace_nightvision_noiseScaling = 0.0155968;
+ace_nightvision_shutterEffects = true;
 
 // ACE Overheating
 force force ace_overheating_displayTextOnJam = true;
@@ -341,11 +341,11 @@ force force ace_vehiclelock_vehicleStartingLockState = -1;
 
 // ACE View Distance Limiter
 force force ace_viewdistance_enabled = true;
-force force ace_viewdistance_limitViewDistance = 10000;
+force force ace_viewdistance_limitViewDistance = 6000;
 force force ace_viewdistance_objectViewDistanceCoeff = 0;
-force force ace_viewdistance_viewDistanceAirVehicle = 12;
-force force ace_viewdistance_viewDistanceLandVehicle = 9;
-force force ace_viewdistance_viewDistanceOnFoot = 9;
+force force ace_viewdistance_viewDistanceAirVehicle = 8;
+force force ace_viewdistance_viewDistanceLandVehicle = 6;
+force force ace_viewdistance_viewDistanceOnFoot = 3;
 
 // ACE Weapons
 force force ace_common_persistentLaserEnabled = true;
@@ -402,7 +402,7 @@ force force MRH_SAT_allowFullscreen = true;
 force force MRH_SAT_allowLasering = true;
 force force MRH_SAT_allowTargetDetection = true;
 force force MRH_SAT_allowTargetTracking = true;
-force force MRH_SAT_MaxSatAltitude = 1000;
+force force MRH_SAT_MaxSatAltitude = 10000;
 
 // TFAR - clientside settings
 TFAR_default_radioVolume = 7;
