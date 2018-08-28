@@ -81,7 +81,7 @@ _civRecruitEnabled = true;          //(Bool - true or false) Set this to false t
 _armedCivPercentage = 10;           //(Number - 0 to 100) Max percentage of civilians armed with weapons from the array below, either on their person or in their backpacks (will only work if _civRecruitEnabled is set to true, otherwise this is ignored)
 
 //Weapon classnames for armed civilians (array of classnames)
-_civWpnArray = ["vme_pla_qsw06"];
+_civWpnArray = ["hlc_Pistol_M11"];
 
 //Items that civilians may carry
 _civItemArray = ["ACE_Cellphone","ACE_Banana","ACE_Flashlight_KSF1","ACE_SpraypaintBlack","itemRadio","ACE_key_civ","ACE_key_lockpick","ACE_fieldDressing","IEDUrbanSmall_F","IEDUrbanSmall_F"];
