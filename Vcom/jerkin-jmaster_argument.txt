@@ -1,0 +1,304 @@
+JerkinMerkinToday at 9:52 AM
+I'd like to start adding some more stuff to the mission today, is there anything that needs to be pushed to master before I pick it back up or am I good to continue off of the last update I pushed?
+JmasterToday at 9:55 AM
+You're good
+I'll merge any changes I made to what you did
+JerkinMerkinToday at 9:55 AM
+okay cool
+check out my post in the general section of discord, you'll appreciate it
+JmasterToday at 10:00 AM
+Ha that's great lol
+JerkinMerkinToday at 10:34 AM
+ill go ahead and do the headless client stuff.  what should i name the slot or slots and should there be more than one?
+JmasterToday at 10:38 AM
+Put two in
+name them headlessclient1 and headlessclient2 respectively
+JerkinMerkinToday at 10:38 AM
+okay
+JmasterToday at 11:57 AM
+Yo
+JerkinMerkinToday at 11:57 AM
+sup
+JmasterToday at 11:57 AM
+So that ace arsenal script I got works
+I had it working in the missionfile edit I made
+JerkinMerkinToday at 11:58 AM
+wierd, it wouldnt work for me along with the other script
+JmasterToday at 11:58 AM
+Don't worry about implementing it, I can take care of it
+which other script?
+JerkinMerkinToday at 11:58 AM
+no its fine, I'm already working on it actually
+the one that converts BI arsenal to ACE arsenal
+its alright, I've already taken care of it
+JmasterToday at 11:59 AM
+?
+JerkinMerkinToday at 11:59 AM
+I'm also doing loadout pre-sets as we discussed, it works fine and will make all of us happy
+JmasterToday at 11:59 AM
+It doesn't
+And this is going to be discussed at length again
+JerkinMerkinToday at 11:59 AM
+I figured something out, as I said I would
+JmasterToday at 11:59 AM
+What you figured out is not acceptable
+JerkinMerkinToday at 11:59 AM
+ohhhh boy
+JerkinMerkinToday at 12:00 PM
+do we really want to do this again
+JmasterToday at 12:00 PM
+Yes.
+It never actually ended
+JerkinMerkinToday at 12:00 PM
+well, I'll have no part in it, and you better think twice if you want to go around swinging your dick like youre in charge of everything.
+JmasterToday at 12:00 PM
+Cool
+JerkinMerkinToday at 12:00 PM
+because I will have no part in this development team
+JmasterToday at 12:01 PM
+What ever
+that's your choice
+JerkinMerkinToday at 12:01 PM
+fine
+JmasterToday at 12:01 PM
+It's also your choice for your missions not to be run
+JerkinMerkinToday at 12:01 PM
+I rescind all permissions for you to touch or run my mission
+JmasterToday at 12:02 PM
+Nothing against you Jerkin, but if it was Nichols was here you wouldn't be having this conversation
+Sweet
+Go make missions somewhere else
+JerkinMerkinToday at 12:02 PM
+deal
+JmasterToday at 12:02 PM
+I've heard 15th is anal about realism
+and they use set loadouts
+you should fit in just fine
+For the record this isn't just a personal issue
+JerkinMerkinToday at 12:03 PM
+ooof this is fun.  jay on a power trip
+JmasterToday at 12:03 PM
+Multiple people have said they will leave the community over this issue
+JerkinMerkinToday at 12:04 PM
+well youre talking to one of them, im so glad youre here to lookout for jay instead of the community
+JmasterToday at 12:04 PM
+No
+I don't care if you leave
+at this point it's either You or a couple of other people
+I'd rather keep that couple of people
+because we can't afford to lose our playerbase
+we can afford to lose A mission maker
+I would rather not
+but if you are going to be difficult so be it
+JerkinMerkinToday at 12:05 PM
+hey, thats your decision big development head
+i hope you stand by it
+and i hope you realize you are the ONLY one who has these opinions in the development team
+JmasterToday at 12:06 PM
+So be it
+if I must be the voice of reason I will
+If the rest of the development team have their heads that far up their asses then they can leave too
+because it's not their job to make missions for themselves
+they make them for the community
+if they can't accept that people don't want to play the way that YOU want them to
+JerkinMerkinToday at 12:07 PM
+no, you want to make jmaster missions, not community missions
+JmasterToday at 12:07 PM
+No
+JerkinMerkinToday at 12:07 PM
+this isnt fucking exile
+JmasterToday at 12:07 PM
+I know it isn't
+We also aren't a historical reenactment community
+We're a milsim community
+JerkinMerkinToday at 12:07 PM
+you dont know what this community is
+JmasterToday at 12:07 PM
+It isn't about gear
+I do
+I was there with Nichols when it was founded
+I discussed what we stand for with Nichols
+something we both agreed on
+This isn't about making "Jmaster missions"
+This is about compromising our community tenants because YOU want YOUR mission YOUR way
+JerkinMerkinToday at 12:09 PM
+what fucking tenants?  show me where the fuck it says I have to put in an arsenal YOUR way
+JmasterToday at 12:09 PM
+"Milsim without the bullshit"
+JerkinMerkinToday at 12:10 PM
+dude, Im fucking over it.  youre going to kill this community and ill be laughing as it falls because of your hubris
+THAT DOESNT GIVE YOU A BLANKET TO BE A DICTATOR
+JmasterToday at 12:10 PM
+So long as you put an arsenal with the equiptment required in it there isn't a problem
+JerkinMerkinToday at 12:10 PM
+IM OUT, FUCK OFF
+JmasterToday at 12:10 PM
+I don't give two shits what's in it
+JerkinMerkinToday at 12:10 PM
+THATS EXACTLY WHAT I DID??!
+JmasterToday at 12:10 PM
+No
+JerkinMerkinToday at 12:10 PM
+YOU HAVENT EVEN LOOKED
+JmasterToday at 12:10 PM
+You said you were restricting it to slots
+you just did
+that is what I'm objecting to
+having no arsenal
+and just using slots
+JerkinMerkinToday at 12:11 PM
+ITS PRE-SET LOADOUTS IN THE ARSENAL??
+JmasterToday at 12:11 PM
+WHICH IS FINE?!
+JerkinMerkinToday at 12:11 PM
+THERE IS AN ARSENAL
+WELL NOW WE HAVE A FUCKING PROBLEM
+JmasterToday at 12:11 PM
+I'm really confused now
+JerkinMerkinToday at 12:11 PM
+I DID EXACTLY WHAT YOU ASKED
+AND YOU GO OFF ON ME ABOUT HOW ITS NOT ACCEPTABLE
+YOU HAVE A FUCKING PROBLEM, BECAUSE YOU CANT SEE PAST YOUR FUCKING EGO
+I TOLD YOU I WOULD MAKE IT WORK
+YOU HAVE TO FUCKING TRUST ME
+JmasterToday at 12:12 PM
+I did trust you
+until you said that you limited it to what you get in slots?
+ie: removing arsenal?
+JerkinMerkinToday at 12:12 PM
+I NEVER SAID I REMOVED ARSENAL
+JmasterToday at 12:13 PM
+fucks sakes
+I misread that
+JerkinMerkinToday at 12:13 PM
+YOU JUST STARTED AUTOMATICALLY SWINGING YOUR BIG EGOTISTICAL DICK AT MNE
+WELL NOW WE HAVE A FUCKING PROBLEM
+JmasterToday at 12:13 PM
+No, I thought you were trying to pull a scotty
+JerkinMerkinToday at 12:13 PM
+GOOD FUCKING JOB JAY
+JmasterToday at 12:13 PM
+I don't want to micro manage and control missions
+All I want is to make sure that people don't fucking leave this community over stupid decisions
+JerkinMerkinToday at 12:14 PM
+WELL YOU FUCKING ARE.  AND I HAVE NO FAITH IN YOU AS HEAD OF DEVELOPMENT
+JmasterToday at 12:14 PM
+and we don't have arguments about gear
+JerkinMerkinToday at 12:14 PM
+NO ARGUMENT IN GEAR GOES BOTH WAYS
+JmasterToday at 12:15 PM
+We're supposed to be "Milsim without the bullshit"
+JerkinMerkinToday at 12:15 PM
+this isnt even about the fucking arsenal shit anymore
+JmasterToday at 12:15 PM
+yet it's come back to arguing about gear
+JerkinMerkinToday at 12:15 PM
+i cant take this dick swinging contest
+JmasterToday at 12:15 PM
+dude
+if this was Nichols you would have just said Yes
+and went with it
+JerkinMerkinToday at 12:16 PM
+this isnt about nichols
+this is about you
+JmasterToday at 12:16 PM
+Yes,
+But Nichols has the power to do the same thing
+and has done so in the past
+JerkinMerkinToday at 12:17 PM
+well, nichols and I go way back to SO MSO, hes made multiple successful milsim missions.   i trust him, and you know what, yea id probably listen to him over you
+and you know what
+after last night and today
+i have zero faith in YOU
+JmasterToday at 12:17 PM
+Sweet
+I love how you can just suddenly strut into the community and suddenly get everything your way
+it must be nice going waay back with Nichols
+JerkinMerkinToday at 12:19 PM
+ow
+that hurt
+i dont really care what you think about me
+doesnt matter anymore since im taking my shit elsewhere
+JmasterToday at 12:19 PM
+You make decent missions and you are an alright guy
+JerkinMerkinToday at 12:20 PM
+cool
+JmasterToday at 12:20 PM
+We disagree on some major issues and I don't think we would be able to work together
+But I would happen to remain friends
+JerkinMerkinToday at 12:20 PM
+apparently not
+and that remains to be seen, im kinda pissed off right now
+i dont have anything against you personally
+but look
+JmasterToday at 12:20 PM
+I'm pissed off over this as well
+JerkinMerkinToday at 12:21 PM
+youre only what, 18, 19?
+JmasterToday at 12:21 PM
+This isn't an ego thing
+TF-Red is literally my life
+I have no other friends
+I DO NOT want to see this fail
+at ANY cost
+because if it does I don't know what I would do to myself
+There have been times when I've contemplated suicide
+and I DO NOT want to end up in that dark place again
+and I'm not being melodramatic
+I'm finally getting my life back in order then this shit with scotty happens
+JerkinMerkinToday at 12:23 PM
+okay
+if i say something wrong its because im pissed off, im not actually trying to say mean shit
+go outside, take a vacation
+its not worth it
+why do you think i leave for months on end sometimes?
+cause i need a break from it all
+its a video game at the end of the day
+JmasterToday at 12:25 PM
+tbh that's kinda what I did
+its not the game I'm worried about
+its the community/people
+literally my only friends
+even ford
+if you had a way to stop your entire friendgroup from leaving you forever would you not do everything on your power to stop it from happening?
+This isn't an ego thing for me. I could give less of a fuck about what people on the internet think of me
+I don't care about some stupid title in an online gaming community
+What I care about is being involved in the direction of this community
+I feel that I have put as much work as Nichols into this community
+and whether or not I have an owner tag idgaf but its mine as much as it is nichols
+JerkinMerkinToday at 12:28 PM
+that is exactly the mentality that killed SO and spearhead
+JmasterToday at 12:28 PM
+I've been there from the start helping on grow
+Well then maybe they should have talked it out
+JerkinMerkinToday at 12:29 PM
+when you feel because you've put in all this work that suddenly you need to be in charge of everything, that called entitlement
+JmasterToday at 12:29 PM
+like I'm going to do with Nichols today
+No
+the thing is
+JerkinMerkinToday at 12:29 PM
+it suddently doesnt make your opinions any more correct
+JmasterToday at 12:29 PM
+I've always felt that way
+Since the beginning I was in charge of development
+aka the community development direction
+I created the development structure
+and I ran it
+I was/am the one in charge of it
+none of that has changed since the beginning
+I don't suddenly think I'm entitled to lead development because I always have
+that is my job
+and I don't like fighting with people over stupid shit
+I even thought of a compromise that might work for you
+But that ain't worth shit now
+JerkinMerkinToday at 12:34 PM
+honestly, i dont give a shit.  you can play development head all you want.  im tired of this coversation and you are not worth my time.  I don't work for you, and if you want to make milsim a certain way,  then you're going to find out very soon that you'll soon be making milsim all by yourself
+im out
+JmasterToday at 12:34 PM
+and I don't work for you
+alright suit yourself
+it was nice working with you for a while
+python is a good mission
+You'll definately find someone willing to run it if you are leaving
+hell I bet that Auburn's group would love to play it
