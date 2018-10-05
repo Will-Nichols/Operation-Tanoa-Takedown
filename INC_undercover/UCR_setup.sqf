@@ -21,14 +21,14 @@ _racProfFacCiv = 1;                     //(Number) Multiplies the effect of raci
 _racProfFacEny = 1;                     //(Number) Multiplies the effect of racial profiling. Lower this number to simulate more multicultural enemy forces
 
 _regEnySide = east;                     //Units of this side will be classed as regular enemies (Side: can be east, west, independent) - if you don't need this, comment the line out (i.e. put // before _regEnySide, as in //_regEnySide = east;).
-_regBarbaric = false;                   //(Bool - true or false) Will this side lash out on civilians if it takes casualties and doesn't know the attacker?
+_regBarbaric = true;                   //(Bool - true or false) Will this side lash out on civilians if it takes casualties and doesn't know the attacker?
 _regDetectRadius = 10;                  //Default detection radius for regular troops (this will expand and contract based on weather, time of day, and how the undercover unit is acting - civilians within this radius will be under much more scrutinty)
 
 _asymEnySide = sideEmpty;               //Units of this side will be classed as asymetric enemies (Side: can be east, west, independent) - if you don't need this, comment the line out (i.e. put // before _asymEnySide, as in //_asymEnySide = east;).
 _asymBarbaric = true;                   //(Bool - true or false) Will this side have a small chance of lashing out on civilians if it takes casualties and doesn't know the attacker?
 _asymDetectRadius = 15;                 //Default detection radius for asym troops (this will expand and contract based on weather, time of day, and how the undercover unit is acting - civilians within this radius will be under much more scrutinty)
 
-_trespassMarkers = ["INC_tre_NoMan1","INC_tre_NoMan2","INC_tre_NoMan3","INC_tre_NoMan4","INC_tre_NoMan5","INC_tre_NoMan6","INC_tre_NoMan7","INC_tre_NoMan8","INC_tre_NoMan9","INC_tre_NoMan10","INC_tre_NoMan11","INC_tre_NoMan12","INC_tre_NoMan13","INC_tre_NoMan14","INC_tre_NoMan15","INC_tre_NoMan16","INC_tre_NoMan17","INC_tre_NoMan18","INC_tre_NoMan19","INC_tre_NoMan20","INC_tre_NoMan21"];                  //Names of additional markers for areas that would be considered trespassing (any with "INC_tre" - case sensitive - somewhere in the marker name will automatically be included)
+_trespassMarkers = [""];                  //Names of additional markers for areas that would be considered trespassing (any with "INC_tre" - case sensitive - somewhere in the marker name will automatically be included)
 
 //-------------------------Civilian Disguise settings-------------------------
 

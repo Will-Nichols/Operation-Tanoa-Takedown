@@ -1,5 +1,8 @@
 comment "Exported from Arsenal by Nichols";
 
+waitUntil {!isNull player};
+_unit = _this select 0;
+
 comment "Remove existing items";
 removeAllWeapons _this;
 removeAllItems _this;

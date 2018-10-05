@@ -1,5 +1,8 @@
 comment "Exported from Arsenal by Nichols";
 
+waitUntil {!isNull player};
+_unit = _this select 0;
+
 comment "Remove existing items";
 removeAllWeapons _this;
 removeAllItems _this;
@@ -58,10 +61,6 @@ _this linkItem "ACE_Altimeter";
 _this linkItem "tf_anprc152";
 _this linkItem "ItemGPS";
 _this linkItem "A3_GPNVG18b_REC_BLK_F";
-
-comment "Set identity";
-_this setFace "WhiteHead_12";
-_this setSpeaker "male11eng";
 
 comment "Set Medical Class";
 _this setVariable ["ace_medical_medicClass",2];
