@@ -1,0 +1,2 @@
+HLC_LRR_ammobox
+["hlc_rifle_awcovert","U_B_FullGhillie_lsh","U_B_T_Sniper_F","ACE_ATragMX","ACE_Kestrel4500","optic_LRPS","optic_NVS","optic_Nightstalker","rhsusf_bino_leopold_mk4","hlc_5rnd_300WM_AP_AWM","hlc_5rnd_300WM_FMJ_AWM","hlc_5rnd_300WM_mk248_AWM","hlc_5rnd_300WM_BTSP_AWM","hlc_5rnd_300WM_SBT_AWM","hlc_5rnd_300WM_T_AWM"]
