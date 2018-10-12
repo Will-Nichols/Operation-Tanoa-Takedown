@@ -101,7 +101,7 @@ ace_interact_menu_menuBackground = 0;
 ace_interact_menu_selectorColor = [1,0,0];
 ace_interact_menu_shadowSetting = 2;
 ace_interact_menu_textSize = 2;
-ace_interact_menu_useListMenu = false;
+ace_interact_menu_useListMenu = true;
 
 // ACE Logistics
 force ace_cargo_enable = true;
