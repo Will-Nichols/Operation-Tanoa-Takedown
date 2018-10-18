@@ -1,4 +1,5 @@
-comment "Exported from Arsenal by Nichols";
+//comment "Exported from Arsenal by Nichols";
+//[_this,,"Molokous4"] execVM "scripts\loadouts\createLoadout.sqf";
 
 waitUntil {!isNull player};
 _unit = _this select 0;

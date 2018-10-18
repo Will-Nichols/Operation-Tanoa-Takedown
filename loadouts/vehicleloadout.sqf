@@ -1,4 +1,5 @@
 //this is vehicloadout.sqf (insert your classnames and extra stuff)
+if(!isServer) exitWith {};
 
 _prowler = _this select 0;
 clearWeaponCargoGlobal _apc;
