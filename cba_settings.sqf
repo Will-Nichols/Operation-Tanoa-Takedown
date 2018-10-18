@@ -63,8 +63,8 @@ force ace_explosives_requireSpecialist = false;
 
 // ACE Fragmentation Simulation
 force force ace_frag_enabled = false;
-force ace_frag_maxTrack = 10;
-force ace_frag_maxTrackPerFrame = 10;
+force force ace_frag_maxTrack = 10;
+force force ace_frag_maxTrackPerFrame = 10;
 force force ace_frag_reflectionsEnabled = true;
 force force ace_frag_spallEnabled = false;
 
@@ -81,9 +81,9 @@ force force ace_hearing_enabledForZeusUnits = true;
 force force ace_hearing_unconsciousnessVolume = 0.4;
 
 // ACE Interaction
-force ace_interaction_disableNegativeRating = false;
-ace_interaction_enableMagazinePassing = true;
-force ace_interaction_enableTeamManagement = true;
+force force ace_interaction_disableNegativeRating = false;
+force force ace_interaction_enableMagazinePassing = true;
+force force ace_interaction_enableTeamManagement = true;
 
 // ACE Interaction Menu
 ace_gestures_showOnInteractionMenu = 2;
@@ -155,9 +155,9 @@ force force ace_maptools_rotateModifierKey = 1;
 // ACE Medical
 force force ace_medical_ai_enabledFor = 2;
 force force ace_medical_AIDamageThreshold = 1;
-force ace_medical_allowLitterCreation = true;
-force ace_medical_allowUnconsciousAnimationOnTreatment = false;
-force ace_medical_amountOfReviveLives = -1;
+force force ace_medical_allowLitterCreation = true;
+force force ace_medical_allowUnconsciousAnimationOnTreatment = true;
+force force ace_medical_amountOfReviveLives = -1;
 force force ace_medical_bleedingCoefficient = 1;
 force force ace_medical_blood_enabledFor = 2;
 force force ace_medical_consumeItem_PAK = 0;
@@ -172,32 +172,32 @@ force force ace_medical_enableUnconsciousnessAI = 0;
 force force ace_medical_enableVehicleCrashes = true;
 force ace_medical_healHitPointAfterAdvBandage = false;
 force force ace_medical_increaseTrainingInLocations = true;
-force ace_medical_keepLocalSettingsSynced = true;
+force force ace_medical_keepLocalSettingsSynced = true;
 force force ace_medical_level = 2;
-force ace_medical_litterCleanUpDelay = 0;
-force ace_medical_litterSimulationDetail = 1;
-force ace_medical_maxReviveTime = 120;
+force force ace_medical_litterCleanUpDelay = 120;
+force force ace_medical_litterSimulationDetail = 1;
+force force ace_medical_maxReviveTime = 120;
 force force ace_medical_medicSetting = 2;
-force ace_medical_medicSetting_basicEpi = 0;
-force force ace_medical_medicSetting_PAK = 0;
-force force ace_medical_medicSetting_SurgicalKit = 1;
+force force ace_medical_medicSetting_basicEpi = 0;
+force force ace_medical_medicSetting_PAK = 2;
+force force ace_medical_medicSetting_SurgicalKit = 2;
 force force ace_medical_menu_allow = 1;
 force force ace_medical_menu_maxRange = 3;
-force force ace_medical_menu_openAfterTreatment = true;
+force force ace_medical_menu_openAfterTreatment = false;
 force force ace_medical_menu_useMenu = 1;
 ace_medical_menuTypeStyle = 0;
 force ace_medical_moveUnitsFromGroupOnUnconscious = false;
 force force ace_medical_painCoefficient = 1;
 force force ace_medical_painEffectType = 0;
-force ace_medical_painIsOnlySuppressed = true;
-force force ace_medical_playerDamageThreshold = 9.98961;
+force force ace_medical_painIsOnlySuppressed = true;
+force force ace_medical_playerDamageThreshold = 16;
 force force ace_medical_preventInstaDeath = true;
 force force ace_medical_remoteControlledAI = true;
-force ace_medical_useCondition_PAK = 0;
-force force ace_medical_useCondition_SurgicalKit = 0;
-force ace_medical_useLocation_basicEpi = 0;
-force ace_medical_useLocation_PAK = 3;
-force force ace_medical_useLocation_SurgicalKit = 0;
+force force ace_medical_useCondition_PAK = 1;
+force force ace_medical_useCondition_SurgicalKit = 1;
+force force ace_medical_useLocation_basicEpi = 0;
+force force ace_medical_useLocation_PAK = 3;
+force force ace_medical_useLocation_SurgicalKit = 2;
 
 // ACE Mk6 Mortar
 force force ace_mk6mortar_airResistanceEnabled = true;
@@ -401,45 +401,45 @@ acex_volume_remindIfLowered = false;
 acex_volume_showNotification = true;
 
 // Achilles - Available Factions
-Achilles_var_45th_Airborne = true;
-Achilles_var_BLU_CTRG_F = true;
-Achilles_var_BLU_F = true;
-Achilles_var_BLU_GEN_F = true;
-Achilles_var_BLU_T_F = true;
-Achilles_var_CIV_F = true;
-Achilles_var_CIV_F_AFRICA = true;
-Achilles_var_CIV_F_ASIA = true;
-Achilles_var_CIV_F_EUROPE = true;
-Achilles_var_CIV_F_TANOA = true;
-Achilles_var_CIV_IDAP_F = true;
-Achilles_var_GIGT = true;
-Achilles_var_IND_C_F = true;
-Achilles_var_IND_F = true;
-Achilles_var_IND_G_F = true;
-Achilles_var_Interactive_F = true;
-Achilles_var_OPF_F = true;
-Achilles_var_OPF_T_F = true;
-Achilles_var_OPF_V_F = true;
-Achilles_var_PLA_Faction = true;
-Achilles_var_rhs_faction_socom = true;
-Achilles_var_rhs_faction_usaf = true;
-Achilles_var_rhs_faction_usarmy = true;
-Achilles_var_rhs_faction_usarmy_d = true;
-Achilles_var_rhs_faction_usarmy_wd = true;
-Achilles_var_rhs_faction_usmc = true;
-Achilles_var_rhs_faction_usn = true;
-Achilles_var_Virtual_F = true;
-Achilles_var_VSM_GP = true;
+force force Achilles_var_45th_Airborne = true;
+Achilles_var_BLU_CTRG_F = false;
+Achilles_var_BLU_F = false;
+Achilles_var_BLU_GEN_F = false;
+Achilles_var_BLU_T_F = false;
+force force Achilles_var_CIGT = true;
+force force Achilles_var_CIV_F = true;
+force force Achilles_var_CIV_F_AFRICA = true;
+force force Achilles_var_CIV_F_ASIA = true;
+force force Achilles_var_CIV_F_EUROPE = true;
+force force Achilles_var_CIV_F_TANOA = true;
+force force Achilles_var_CIV_IDAP_F = true;
+force force Achilles_var_IND_C_F = true;
+Achilles_var_IND_F = false;
+Achilles_var_IND_G_F = false;
+force force Achilles_var_Interactive_F = true;
+Achilles_var_OPF_F = false;
+Achilles_var_OPF_T_F = false;
+Achilles_var_OPF_V_F = false;
+force force Achilles_var_PLA_Faction = true;
+force force Achilles_var_rhs_faction_socom = true;
+force force Achilles_var_rhs_faction_usaf = true;
+force force Achilles_var_rhs_faction_usarmy = true;
+force force Achilles_var_rhs_faction_usarmy_d = true;
+force force Achilles_var_rhs_faction_usarmy_wd = true;
+force force Achilles_var_rhs_faction_usmc = true;
+force force Achilles_var_rhs_faction_usn = true;
+Achilles_var_Virtual_F = false;
+force force Achilles_var_VSM_GP = true;
 
 // Achilles - Curator Vision Modes
 achilles_curator_vision_blackhot = false;
 achilles_curator_vision_blackhotgreencold = false;
 achilles_curator_vision_blackhotredcold = false;
 achilles_curator_vision_greenhotcold = false;
-achilles_curator_vision_nvg = true;
-achilles_curator_vision_redgreen = false;
+force force achilles_curator_vision_nvg = true;
+force force achilles_curator_vision_redgreen = true;
 achilles_curator_vision_redhot = false;
-achilles_curator_vision_whitehot = true;
+force force achilles_curator_vision_whitehot = true;
 achilles_curator_vision_whitehotredcold = false;
 
 // Achilles - Debug
@@ -457,13 +457,39 @@ Achilles_var_moduleTreeCollapse = true;
 Achilles_var_moduleTreeDLC = true;
 Achilles_var_moduleTreeHelmet = false;
 
+// CBA UI
+cba_ui_StorePasswords = 1;
+
 // Diwako's ACE Ragdolling
-force diwako_ragdoll_ai = false;
-force diwako_ragdoll_ragdolling = false;
-force diwako_ragdoll_server_only = false;
+force force diwako_ragdoll_ai = true;
+force force diwako_ragdoll_ragdolling = true;
+force force diwako_ragdoll_server_only = true;
+
+// dzn Extended Jamming
+force force dzn_EJAM_dud_ChanceSettings = 1;
+force force dzn_EJAM_fail_to_eject_ChanceSettings = 2;
+force force dzn_EJAM_fail_to_extract_ChanceSettings = 2;
+force force dzn_EJAM_feed_failure_2_ChanceSettings = 1;
+force force dzn_EJAM_feed_failure_ChanceSettings = 2;
+force force dzn_EJAM_Force = true;
+force force dzn_EJAM_ForceOverallChance = true;
+force force dzn_EJAM_MappingSettings = "[""arifle_MX_F"",0.05,45,10,45,0,0]";
+force force dzn_EJAM_OverallChanceSetting = 0.1;
+force force dzn_EJAM_SubsonicJamEffectSetting = "10";
 
 // NIArms
 force force niarms_magSwitch = true;
+
+// Punish unknown weapon
+force force diw_unknownwp_add_weapons = "";
+force force diw_unknownwp_briefing = true;
+force force diw_unknownwp_cooldown = 60;
+force force diw_unknownwp_dispersion_add = 25;
+force force diw_unknownwp_enable = true;
+force force diw_unknownwp_jam_explosion = 2.5;
+force force diw_unknownwp_jamchance_add = 9.69248;
+force force diw_unknownwp_propagation = false;
+force force diw_unknownwp_reload_failure = 1.3369;
 
 // TFAR - clientside settings
 TFAR_default_radioVolume = 7;
@@ -494,7 +520,7 @@ force force TFAR_objectInterceptionEnabled = true;
 force force tfar_radiocode_east = "_opfor";
 force force tfar_radiocode_independent = "_independent";
 force force tfar_radiocode_west = "_bluefor";
-force force tfar_radioCodesDisabled = false;
+force force tfar_radioCodesDisabled = true;
 force force TFAR_SameLRFrequenciesForSide = true;
 force force TFAR_SameSRFrequenciesForSide = true;
 force TFAR_setting_defaultFrequencies_lr_east = "";
