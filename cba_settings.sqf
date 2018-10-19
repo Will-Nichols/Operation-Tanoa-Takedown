@@ -465,18 +465,6 @@ force force diwako_ragdoll_ai = true;
 force force diwako_ragdoll_ragdolling = true;
 force force diwako_ragdoll_server_only = true;
 
-// dzn Extended Jamming
-force force dzn_EJAM_dud_ChanceSettings = 1;
-force force dzn_EJAM_fail_to_eject_ChanceSettings = 2;
-force force dzn_EJAM_fail_to_extract_ChanceSettings = 2;
-force force dzn_EJAM_feed_failure_2_ChanceSettings = 1;
-force force dzn_EJAM_feed_failure_ChanceSettings = 2;
-force force dzn_EJAM_Force = true;
-force force dzn_EJAM_ForceOverallChance = true;
-force force dzn_EJAM_MappingSettings = "[""arifle_MX_F"",0.05,45,10,45,0,0]";
-force force dzn_EJAM_OverallChanceSetting = 0.1;
-force force dzn_EJAM_SubsonicJamEffectSetting = "10";
-
 // NIArms
 force force niarms_magSwitch = true;
 
