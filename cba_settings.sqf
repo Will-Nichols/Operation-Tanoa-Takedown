@@ -63,8 +63,8 @@ force ace_explosives_requireSpecialist = false;
 
 // ACE Fragmentation Simulation
 force force ace_frag_enabled = false;
-force force ace_frag_maxTrack = 10;
-force force ace_frag_maxTrackPerFrame = 10;
+force ace_frag_maxTrack = 10;
+force ace_frag_maxTrackPerFrame = 10;
 force force ace_frag_reflectionsEnabled = true;
 force force ace_frag_spallEnabled = false;
 
@@ -123,9 +123,9 @@ force ace_repair_repairDamageThreshold_engineer = 0.4;
 force ace_repair_wheelRepairRequiredItems = 0;
 
 // ACE Magazine Repack
-force ace_magazinerepack_timePerAmmo = 1.5;
-force ace_magazinerepack_timePerBeltLink = 8;
-force ace_magazinerepack_timePerMagazine = 2;
+force force ace_magazinerepack_timePerAmmo = 1.5;
+force force ace_magazinerepack_timePerBeltLink = 8;
+force force ace_magazinerepack_timePerMagazine = 2;
 
 // ACE Map
 force ace_map_BFT_Enabled = false;
@@ -160,7 +160,7 @@ force force ace_medical_allowUnconsciousAnimationOnTreatment = true;
 force force ace_medical_amountOfReviveLives = -1;
 force force ace_medical_bleedingCoefficient = 1;
 force force ace_medical_blood_enabledFor = 2;
-force force ace_medical_consumeItem_PAK = 0;
+force force ace_medical_consumeItem_PAK = 1;
 force force ace_medical_consumeItem_SurgicalKit = 0;
 force force ace_medical_delayUnconCaptive = 5.74868;
 force force ace_medical_enableAdvancedWounds = true;
@@ -179,11 +179,11 @@ force force ace_medical_litterSimulationDetail = 1;
 force force ace_medical_maxReviveTime = 120;
 force force ace_medical_medicSetting = 2;
 force force ace_medical_medicSetting_basicEpi = 0;
-force force ace_medical_medicSetting_PAK = 2;
+force force ace_medical_medicSetting_PAK = 1;
 force force ace_medical_medicSetting_SurgicalKit = 2;
 force force ace_medical_menu_allow = 1;
 force force ace_medical_menu_maxRange = 3;
-force force ace_medical_menu_openAfterTreatment = false;
+force force ace_medical_menu_openAfterTreatment = true;
 force force ace_medical_menu_useMenu = 1;
 ace_medical_menuTypeStyle = 0;
 force ace_medical_moveUnitsFromGroupOnUnconscious = false;
