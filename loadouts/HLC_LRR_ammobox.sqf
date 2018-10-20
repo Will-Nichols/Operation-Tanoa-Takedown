@@ -1,2 +1,24 @@
-HLC_LRR_ammobox
-["hlc_rifle_awcovert","U_B_FullGhillie_lsh","U_B_T_Sniper_F","ACE_ATragMX","ACE_Kestrel4500","optic_LRPS","optic_NVS","optic_Nightstalker","rhsusf_bino_leopold_mk4","hlc_5rnd_300WM_AP_AWM","hlc_5rnd_300WM_FMJ_AWM","hlc_5rnd_300WM_mk248_AWM","hlc_5rnd_300WM_BTSP_AWM","hlc_5rnd_300WM_SBT_AWM","hlc_5rnd_300WM_T_AWM"]
+//null = [_this] execVM "scripts\loadouts\HLC_LRR_ammobox.sqf";
+
+if(!isServer) exitWith {}; 
+_crate = _this select 0; 
+	{ 
+		clearMagazineCargoGlobal _crate; 
+		clearWeaponCargoGlobal _crate; 
+		clearItemCargoGlobal _crate; 
+		clearBackpackCargoGlobal _crate;
+			
+			_crate addWeaponCargoGlobal ["hlc_rifle_awcovert",3];
+			_crate addWeaponCargoGlobal ["ACE_ATragMX",20];
+			_crate addWeaponCargoGlobal ["ACE_Kestrel4500",20];
+			_crate addWeaponCargoGlobal ["optic_LRPS",20];
+			_crate addWeaponCargoGlobal ["optic_NVS",20];
+			_crate addWeaponCargoGlobal ["optic_Nightstalker",20];
+			_crate addWeaponCargoGlobal ["rhsusf_bino_leopold_mk4",20];
+			_crate addWeaponCargoGlobal ["hlc_5rnd_300WM_AP_AWM",20];
+			_crate addWeaponCargoGlobal ["hlc_5rnd_300WM_FMJ_AWM",20];
+			_crate addWeaponCargoGlobal ["hlc_5rnd_300WM_mk248_AWM",20];
+			_crate addWeaponCargoGlobal ["hlc_5rnd_300WM_BTSP_AWM",20];
+			_crate addWeaponCargoGlobal ["hlc_5rnd_300WM_SBT_AWM",20];
+			_crate addWeaponCargoGlobal ["hlc_5rnd_300WM_T_AWM",20];
+};

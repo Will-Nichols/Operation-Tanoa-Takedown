@@ -16,14 +16,14 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=13915;
+		nextID=13941;
 	};
 	class Camera
 	{
-		pos[]={1677.8795,37.352333,713.60779};
-		dir[]={-0.92459369,-0.34291229,0.1663326};
-		up[]={-0.33758399,0.93932056,0.060729612};
-		aside[]={0.17707077,5.1386451e-007,0.98425967};
+		pos[]={1516.5283,6.0245342,678.09888};
+		dir[]={-0.62967104,-0.63712233,0.44452086};
+		up[]={-0.52049118,0.77076048,0.36744419};
+		aside[]={0.57672656,8.1257895e-008,0.81694317};
 	};
 };
 binarizationWanted=0;
@@ -195,15 +195,13 @@ addons[]=
 	"r0ed_SurvivableCrashes",
 	"civ_interact",
 	"amb_ambiance",
-	"POOK_BOATS",
-	"A3_Boat_F_Boat_Transport_01",
-	"PaddleMod"
+	"POOK_BOATS"
 };
 class AddonsMetaData
 {
 	class List
 	{
-		items=118;
+		items=116;
 		class Item0
 		{
 			className="ALiVE_main";
@@ -943,19 +941,6 @@ class AddonsMetaData
 			className="POOK_BOATS";
 			name="POOK_BOATS";
 		};
-		class Item116
-		{
-			className="A3_Boat_F";
-			name="Arma 3 Alpha - Boats and Submersibles";
-			author="Bohemia Interactive";
-			url="https://www.arma3.com";
-		};
-		class Item117
-		{
-			className="PaddleMod";
-			name="PaddleMod";
-			author="Feint";
-		};
 	};
 };
 class DynamicSimulation
@@ -1002,6 +987,24 @@ class CustomAttributes
 						type[]=
 						{
 							"ARRAY"
+						};
+					};
+					class value
+					{
+						items=1;
+						class Item0
+						{
+							class data
+							{
+								class type
+								{
+									type[]=
+									{
+										"STRING"
+									};
+								};
+								value="MenuPosition";
+							};
 						};
 					};
 				};
@@ -2306,7 +2309,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=803;
+		items=798;
 		class Item0
 		{
 			dataType="Logic";
@@ -3482,7 +3485,7 @@ class Mission
 									"STRING"
 								};
 							};
-							value="1200";
+							value="900";
 						};
 					};
 				};
@@ -3577,7 +3580,7 @@ class Mission
 									"STRING"
 								};
 							};
-							value="750";
+							value="550";
 						};
 					};
 				};
@@ -14414,8 +14417,8 @@ class Mission
 			dataType="Logic";
 			class PositionInfo
 			{
-				position[]={10391.71,4.4875188,2688.9001};
-				angles[]={6.2751846,0,6.2751846};
+				position[]={10405.148,4.4141846,2710.8865};
+				angles[]={6.2671909,0,0};
 			};
 			id=30298;
 			type="ALiVE_mil_placement_custom";
@@ -21268,7 +21271,7 @@ class Mission
 					class Attributes
 					{
 						rank="SERGEANT";
-						init="call{[_this,""SFMedic""] execVM ""scripts\loadouts\createLoadout.sqf"";}";
+						init="call{[_this,""SFBreacher""] execVM ""scripts\loadouts\createLoadout.sqf"";}";
 						description="Phantom 1-5 (Lewis)";
 						isPlayable=1;
 						class Inventory
@@ -21649,7 +21652,7 @@ class Mission
 					class Attributes
 					{
 						rank="SERGEANT";
-						init="call{[_this,""SFBreacher""] execVM ""scripts\loadouts\createLoadout.sqf"";}";
+						init="call{[_this,""SFMedic""] execVM ""scripts\loadouts\createLoadout.sqf"";}";
 						description="Phantom 1-6  (Carter)";
 						isPlayable=1;
 						class Inventory
@@ -23281,7 +23284,7 @@ class Mission
 									class Item0
 									{
 										name="Laserbatteries";
-										count=5;
+										count=3;
 										ammoLeft=1;
 									};
 									class Item1
@@ -23508,8 +23511,8 @@ class Mission
 					class Attributes
 					{
 						rank="SERGEANT";
-						init="call{[_this,""SFMedic""] execVM ""scripts\loadouts\createLoadout.sqf"";}";
-						description="Phantom 2-5 (Weston)";
+						init="call{[_this,""SFBreacher""] execVM ""scripts\loadouts\createLoadout.sqf"";}";
+						description="Phantom 2-5 ()";
 						isPlayable=1;
 						class Inventory
 						{
@@ -23889,8 +23892,8 @@ class Mission
 					class Attributes
 					{
 						rank="SERGEANT";
-						init="call{[_this,""SFBreacher""] execVM ""scripts\loadouts\createLoadout.sqf"";}";
-						description="Phantom 2-6  (Demo)";
+						init="call{[_this,""SFMedic""] execVM ""scripts\loadouts\createLoadout.sqf"";}";
+						description="Phantom 2-6  (Weston)";
 						isPlayable=1;
 						class Inventory
 						{
@@ -26330,6 +26333,7 @@ class Mission
 			};
 			id=30367;
 			type="HLC_LRR_ammobox";
+			atlOffset=-1.3113022e-005;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -46034,6 +46038,7 @@ class Mission
 			};
 			id=32481;
 			type="MELB_MH6M";
+			atlOffset=-0.0072698593;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -46152,6 +46157,7 @@ class Mission
 			};
 			id=32482;
 			type="MELB_AH6M";
+			atlOffset=-0.0043554306;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -72931,7 +72937,7 @@ class Mission
 									"STRING"
 								};
 							};
-							value="";
+							value="0";
 						};
 					};
 				};
@@ -73007,7 +73013,7 @@ class Mission
 									"STRING"
 								};
 							};
-							value="400";
+							value="200";
 						};
 					};
 				};
@@ -80230,64 +80236,6 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={1575.5945,1.3703487,646.96973};
-				angles[]={5.9662509,0,0.010663962};
-			};
-			side="Empty";
-			flags=4;
-			class Attributes
-			{
-			};
-			id=33884;
-			type="B_Boat_Transport_01_F";
-			class CustomAttributes
-			{
-				class Attribute0
-				{
-					property="Enh_featureType";
-					expression="_this setFeatureType parseNumber (_value)";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"STRING"
-								};
-							};
-							value="0";
-						};
-					};
-				};
-				class Attribute1
-				{
-					property="ammoBox";
-					expression="[_this,_value] call bis_fnc_initAmmoBox;";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"STRING"
-								};
-							};
-							value="[[[[],[]],[[],[]],[[],[]],[[],[]]],false]";
-						};
-					};
-				};
-				nAttributes=2;
-			};
-		};
-		class Item798
-		{
-			dataType="Object";
-			class PositionInfo
-			{
 				position[]={5014.1226,11.978216,2591.3025};
 				angles[]={0,0.10885279,6.2826972};
 			};
@@ -80336,235 +80284,6 @@ class Mission
 								};
 							};
 							value="0";
-						};
-					};
-				};
-				nAttributes=2;
-			};
-		};
-		class Item799
-		{
-			dataType="Object";
-			class PositionInfo
-			{
-				position[]={1586.9105,1.0261179,645.33051};
-			};
-			side="Empty";
-			flags=4;
-			class Attributes
-			{
-			};
-			id=33885;
-			type="B_Boat_Transport_01_F";
-			class CustomAttributes
-			{
-				class Attribute0
-				{
-					property="Enh_featureType";
-					expression="_this setFeatureType parseNumber (_value)";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"STRING"
-								};
-							};
-							value="0";
-						};
-					};
-				};
-				class Attribute1
-				{
-					property="ammoBox";
-					expression="[_this,_value] call bis_fnc_initAmmoBox;";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"STRING"
-								};
-							};
-							value="[[[[],[]],[[],[]],[[],[]],[[],[]]],false]";
-						};
-					};
-				};
-				nAttributes=2;
-			};
-		};
-		class Item800
-		{
-			dataType="Object";
-			class PositionInfo
-			{
-				position[]={1594.3265,0.78382933,643.80341};
-			};
-			side="Empty";
-			flags=4;
-			class Attributes
-			{
-			};
-			id=33886;
-			type="B_Boat_Transport_01_F";
-			class CustomAttributes
-			{
-				class Attribute0
-				{
-					property="Enh_featureType";
-					expression="_this setFeatureType parseNumber (_value)";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"STRING"
-								};
-							};
-							value="0";
-						};
-					};
-				};
-				class Attribute1
-				{
-					property="ammoBox";
-					expression="[_this,_value] call bis_fnc_initAmmoBox;";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"STRING"
-								};
-							};
-							value="[[[[],[]],[[],[]],[[],[]],[[],[]]],false]";
-						};
-					};
-				};
-				nAttributes=2;
-			};
-		};
-		class Item801
-		{
-			dataType="Object";
-			class PositionInfo
-			{
-				position[]={1601.0883,1.0023611,642.93091};
-			};
-			side="Empty";
-			flags=4;
-			class Attributes
-			{
-			};
-			id=33887;
-			type="B_Boat_Transport_01_F";
-			class CustomAttributes
-			{
-				class Attribute0
-				{
-					property="Enh_featureType";
-					expression="_this setFeatureType parseNumber (_value)";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"STRING"
-								};
-							};
-							value="0";
-						};
-					};
-				};
-				class Attribute1
-				{
-					property="ammoBox";
-					expression="[_this,_value] call bis_fnc_initAmmoBox;";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"STRING"
-								};
-							};
-							value="[[[[],[]],[[],[]],[[],[]],[[],[]]],false]";
-						};
-					};
-				};
-				nAttributes=2;
-			};
-		};
-		class Item802
-		{
-			dataType="Object";
-			class PositionInfo
-			{
-				position[]={1607.1956,1.3309234,642.4942};
-				angles[]={6.0577502,0,0.058599081};
-			};
-			side="Empty";
-			flags=4;
-			class Attributes
-			{
-			};
-			id=33888;
-			type="B_Boat_Transport_01_F";
-			class CustomAttributes
-			{
-				class Attribute0
-				{
-					property="Enh_featureType";
-					expression="_this setFeatureType parseNumber (_value)";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"STRING"
-								};
-							};
-							value="0";
-						};
-					};
-				};
-				class Attribute1
-				{
-					property="ammoBox";
-					expression="[_this,_value] call bis_fnc_initAmmoBox;";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"STRING"
-								};
-							};
-							value="[[[[],[]],[[],[]],[[],[]],[[],[]]],false]";
 						};
 					};
 				};
