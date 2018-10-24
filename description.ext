@@ -1,4 +1,4 @@
-Author="Nichols (Task Force Red)";
+//Author="Nichols (Task Force Red)";
 OnLoadName = "Tanoa Takedown";
 OnLoadMission = "Tanoa Archipelago; Fiji";
 overviewPicture = "USSF_leading_patrol.jpg";

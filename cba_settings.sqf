@@ -469,13 +469,13 @@ force force diwako_ragdoll_server_only = true;
 force force niarms_magSwitch = true;
 
 // Punish unknown weapon
-force force diw_unknownwp_add_weapons = "";
+force force diw_unknownwp_add_weapons = "VME_PLA_QCW05,VME_PLA_QCW85,VME_PLA_LR4,LMG_03_F,SMG_02_F,RPA_WEAP_M3A1,SMG_05_F,ARIFLE_TRG21_F,ARIFLE_TRG20_F,ARIFLE_TRG21_GL_F,ARIFLE_DMR_06_OLIVE_F,SRIFLE_DMR_06_CAME_F";
 force force diw_unknownwp_briefing = true;
 force force diw_unknownwp_cooldown = 60;
 force force diw_unknownwp_dispersion_add = 25;
 force force diw_unknownwp_enable = true;
-force force diw_unknownwp_jam_explosion = 2.5;
-force force diw_unknownwp_jamchance_add = 9.69248;
+force force diw_unknownwp_jam_explosion = 0.5;
+force force diw_unknownwp_jamchance_add = 0.95;
 force force diw_unknownwp_propagation = false;
 force force diw_unknownwp_reload_failure = 1.3369;
 
