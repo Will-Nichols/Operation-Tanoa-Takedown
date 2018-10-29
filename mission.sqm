@@ -16,7 +16,7 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=14123;
+		nextID=14149;
 	};
 	class Camera
 	{
@@ -6372,6 +6372,7 @@ class Mission
 			};
 			id=29143;
 			type="Land_Cargo_Tower_V4_F";
+			atlOffset=2.3841858e-007;
 		};
 		class Item56
 		{
@@ -6388,6 +6389,7 @@ class Mission
 			};
 			id=29144;
 			type="Land_Cargo_HQ_V4_F";
+			atlOffset=-9.5367432e-007;
 		};
 		class Item57
 		{
@@ -7574,7 +7576,7 @@ class Mission
 			fillName="Grid";
 			a=350;
 			b=400;
-			angle=112.07285;
+			angle=112.07284;
 			id=29226;
 			atlOffset=-106.70576;
 		};
@@ -76704,6 +76706,7 @@ class Mission
 					};
 					id=34139;
 					type="CIGT_Advisor";
+					atlOffset=-4.7683716e-007;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -76851,6 +76854,7 @@ class Mission
 					};
 					id=34140;
 					type="CIGT_Handler";
+					atlOffset=4.7683716e-007;
 				};
 				class Item2
 				{
@@ -76868,6 +76872,7 @@ class Mission
 					};
 					id=34141;
 					type="CIGT_Handler";
+					atlOffset=-4.7683716e-007;
 				};
 				class Item3
 				{
@@ -76885,12 +76890,14 @@ class Mission
 					};
 					id=34142;
 					type="CIGT_FAC";
+					atlOffset=4.7683716e-007;
 				};
 			};
 			class Attributes
 			{
 			};
 			id=34138;
+			atlOffset=-4.7683716e-007;
 		};
 		class Item829
 		{
@@ -77306,7 +77313,7 @@ class Mission
 					};
 					id=34159;
 					type="CIGT_Rifleman";
-					atlOffset=1.9073486e-006;
+					atlOffset=2.8610229e-006;
 				};
 				class Item6
 				{
@@ -77392,6 +77399,7 @@ class Mission
 					};
 					id=34164;
 					type="CIGT_Squad_Lead";
+					atlOffset=4.7683716e-007;
 				};
 				class Item1
 				{
@@ -77409,6 +77417,7 @@ class Mission
 					};
 					id=34165;
 					type="CIGT_Team_Lead";
+					atlOffset=-4.7683716e-007;
 				};
 				class Item2
 				{
@@ -77445,7 +77454,7 @@ class Mission
 					};
 					id=34167;
 					type="CIGT_Breacher";
-					atlOffset=4.7683716e-007;
+					atlOffset=7.1525574e-007;
 				};
 				class Item4
 				{
@@ -77482,7 +77491,7 @@ class Mission
 					};
 					id=34169;
 					type="CIGT_Rifleman";
-					atlOffset=-2.3841858e-007;
+					atlOffset=-4.7683716e-007;
 				};
 				class Item6
 				{
@@ -77518,7 +77527,7 @@ class Mission
 					};
 					id=34171;
 					type="CIGT_Designated_Marksman";
-					atlOffset=5.9604645e-007;
+					atlOffset=3.5762787e-007;
 				};
 				class Item8
 				{
@@ -77536,13 +77545,14 @@ class Mission
 					};
 					id=34172;
 					type="CIGT_Autoriflemen";
-					atlOffset=4.7683716e-007;
+					atlOffset=9.5367432e-007;
 				};
 			};
 			class Attributes
 			{
 			};
 			id=34163;
+			atlOffset=4.7683716e-007;
 		};
 		class Item832
 		{
@@ -77715,6 +77725,7 @@ class Mission
 					};
 					id=34175;
 					type="CIGT_Handler";
+					atlOffset=-4.7683716e-007;
 				};
 				class Item2
 				{
@@ -77732,7 +77743,7 @@ class Mission
 					};
 					id=34176;
 					type="CIGT_Handler";
-					atlOffset=-4.7683716e-007;
+					atlOffset=-9.5367432e-007;
 				};
 				class Item3
 				{
@@ -77750,6 +77761,7 @@ class Mission
 					};
 					id=34177;
 					type="CIGT_FAC";
+					atlOffset=-4.7683716e-007;
 				};
 			};
 			class Attributes
@@ -78081,6 +78093,7 @@ class Mission
 					};
 					id=34185;
 					type="O_45thAirborne_PLARF_Team_Leader_01";
+					atlOffset=4.7683716e-007;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -78261,6 +78274,7 @@ class Mission
 					};
 					id=34188;
 					type="O_45thAirborne_PLARF_Asst_AT_Missle_Spec_02";
+					atlOffset=-4.7683716e-007;
 				};
 				class Item4
 				{
@@ -78315,6 +78329,7 @@ class Mission
 			{
 			};
 			id=34184;
+			atlOffset=4.7683716e-007;
 		};
 		class Item836
 		{
@@ -78339,6 +78354,7 @@ class Mission
 					};
 					id=34203;
 					type="O_45thAirborne_PLARF_Squad_Leader_01";
+					atlOffset=4.7683716e-007;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -78504,7 +78520,7 @@ class Mission
 					};
 					id=34205;
 					type="O_45thAirborne_PLARF_Grenadier_01";
-					atlOffset=-7.1525574e-007;
+					atlOffset=-4.7683716e-007;
 				};
 				class Item3
 				{
@@ -78541,7 +78557,7 @@ class Mission
 					};
 					id=34207;
 					type="O_45thAirborne_PLARF_LMG_01";
-					atlOffset=4.7683716e-007;
+					atlOffset=2.3841858e-007;
 				};
 				class Item5
 				{
@@ -78577,6 +78593,7 @@ class Mission
 					};
 					id=34209;
 					type="O_45thAirborne_PLARF_DM_01";
+					atlOffset=4.7683716e-007;
 				};
 				class Item7
 				{
@@ -78595,6 +78612,7 @@ class Mission
 					};
 					id=34210;
 					type="O_45thAirborne_PLARF_Engineer_01";
+					atlOffset=4.7683716e-007;
 				};
 				class Item8
 				{
@@ -78612,7 +78630,7 @@ class Mission
 					};
 					id=34211;
 					type="O_45thAirborne_PLARF_Medic_01";
-					atlOffset=2.3841858e-007;
+					atlOffset=4.7683716e-007;
 				};
 				class Item9
 				{
@@ -78630,7 +78648,7 @@ class Mission
 					};
 					id=34212;
 					type="O_45thAirborne_PLARF_Asst_AT_01";
-					atlOffset=4.7683716e-007;
+					atlOffset=7.1525574e-007;
 				};
 				class Item10
 				{
@@ -78649,6 +78667,7 @@ class Mission
 					};
 					id=34213;
 					type="O_45thAirborne_PLARF_AT_Missle_Spec_01";
+					atlOffset=-4.7683716e-007;
 				};
 				class Item11
 				{
@@ -78667,7 +78686,6 @@ class Mission
 					};
 					id=34214;
 					type="O_45thAirborne_PLARF_Rifleman_01";
-					atlOffset=-4.7683716e-007;
 				};
 				class Item12
 				{
@@ -78745,6 +78763,7 @@ class Mission
 			{
 			};
 			id=34202;
+			atlOffset=4.7683716e-007;
 		};
 		class Item837
 		{

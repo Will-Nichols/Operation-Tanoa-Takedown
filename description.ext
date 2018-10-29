@@ -1,4 +1,5 @@
 //Author="Nichols (Task Force Red)";
+
 OnLoadName = "Tanoa Takedown";
 OnLoadMission = "Tanoa Archipelago; Fiji";
 overviewPicture = "USSF_leading_patrol.jpg";
@@ -30,7 +31,6 @@ class CfgFunctions
 	#include "INC_undercover\cfgFunctions.hpp"
 	#include "vcom\cfgFunctions.hpp"
 	    createShortcuts = 1;
-    #include "scripts\diw_unknownwp\cfgFunctions.hpp"
 };
 
 class CfgRemoteExec
@@ -45,5 +45,4 @@ class CfgRemoteExec
 
 class Extended_PreInit_EventHandlers {
 	VCM_CBASettings = call compile preprocessFileLineNumbers "Vcom\Functions\VCM_CBASettings.sqf";
-	#include "scripts\diw_unknownwp\Extended_PreInit_EventHandlers.hpp"
 };
