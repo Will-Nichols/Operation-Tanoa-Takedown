@@ -1,4 +1,5 @@
-comment "Exported from Arsenal by Nichols";
+//comment "Exported from Arsenal by Nichols"
+//[_this,,"SFSniper"] execVM "scripts\loadouts\createLoadout.sqf";
 
 waitUntil {!isNull player};
 _unit = _this select 0;
@@ -15,14 +16,17 @@ removeGoggles _this;
 
 comment "Add containers";
 _this forceAddUniform "VSM_MulticamTropic_Camo_SS";
+_this addItemToUniform "ACE_Flashlight_XL50";
+_this addItemToUniform "ACE_MapTools";
+_this addItemToUniform "ACE_microDAGR";
+_this addItemToUniform "ACE_plasmaIV_500";
+_this addItemToUniform "ACE_EarPlugs";
 for "_i" from 1 to 3 do {_this addItemToUniform "ACE_epinephrine";};
 for "_i" from 1 to 3 do {_this addItemToUniform "ACE_morphine";};
 for "_i" from 1 to 10 do {_this addItemToUniform "ACE_packingBandage";};
-_this addItemToUniform "ACE_plasmaIV_500";
 for "_i" from 1 to 4 do {_this addItemToUniform "ACE_tourniquet";};
 for "_i" from 1 to 15 do {_this addItemToUniform "ACE_elasticBandage";};
 for "_i" from 1 to 2 do {_this addItemToUniform "ACE_CableTie";};
-_this addItemToUniform "ACE_EarPlugs";
 for "_i" from 1 to 2 do {_this addItemToUniform "ACE_IR_Strobe_Item";};
 _this addItemToUniform "ACE_Flashlight_XL50";
 _this addItemToUniform "ACE_MapTools";
@@ -34,16 +38,16 @@ for "_i" from 1 to 4 do {_this addItemToVest "ACE_M84";};
 for "_i" from 1 to 2 do {_this addItemToVest "HandGrenade";};
 for "_i" from 1 to 6 do {_this addItemToVest "SMA_20Rnd_762x51mm_M80A1_EPR";};
 _this addBackpack "VSM_MulticamTropic_carryall";
-_this addWeapon "SMA_HK416CUSTOMCQBafgB";
-_this addPrimaryWeaponItem "SMA_supp1BOD_556";
-_this addPrimaryWeaponItem "SMA_SFPEQ_HKTOP_BLK";
-_this addPrimaryWeaponItem "sma_spitfire_03_rds_black";
+(backpack _this) addWeaponCargo "SMA_HK416CUSTOMCQBafgB";
+_this addItemToBackpack "SMA_supp1BOD_556";
+_this addItemToBackpack "SMA_SFPEQ_HKTOP_BLK";
+_this addItemToBackpack "sma_spitfire_03_rds_black";
 _this addItemToBackpack "VSM_MulticamTropic_Boonie";
 _this addItemToBackpack "ACE_Kestrel4500";
 _this addItemToBackpack "ACE_RangeCard";
 _this addItemToBackpack "ACE_Tripod";
 for "_i" from 1 to 6 do {_this addItemToBackpack "Laserbatteries";};
-for "_i" from 1 to 7 do {_this addItemToVest "SMA_30Rnd_556x45_Mk318";};
+for "_i" from 1 to 7 do {_this addItemToBackpack "SMA_30Rnd_556x45_Mk318";};
 for "_i" from 1 to 4 do {_this addItemToBackpack "SMA_20Rnd_762x51mm_M80A1_EPR";};
 for "_i" from 1 to 4 do {_this addItemToBackpack "SMA_20Rnd_762x51mm_M80A1_EPR_IR";};
 for "_i" from 1 to 4 do {_this addItemToBackpack "SMA_20Rnd_762x51mm_Lapua_FMJ_Subsonic_IR";};
