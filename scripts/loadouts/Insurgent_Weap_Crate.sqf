@@ -1,4 +1,4 @@
-//null = [_this] execVM "scripts\loadouts\Launcher_Crate.sqf";
+//null = [_this] execVM "scripts\loadouts\Insurgent_Weap_Crate.sqf";
 
 if(!isServer) exitWith {};
 _crate = _this select 0; 
