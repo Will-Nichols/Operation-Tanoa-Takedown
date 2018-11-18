@@ -17,8 +17,8 @@ _fullAIfunctionality = false;           //Enable all checks on AI (may degrade p
 _easyMode = true;                       //Disguise checks will also reveal if the player is compromised or not
 
 _racism = true;                         //Enemies will notice if you aren't the race of the faction you're pretending to be (making you easier to detect if nothing is covering your face)
-_racProfFacCiv = 1;                     //(Number) Multiplies the effect of racial profiling. Lower this number to simulate more multicultural civilian population
-_racProfFacEny = 1;                     //(Number) Multiplies the effect of racial profiling. Lower this number to simulate more multicultural enemy forces
+_racProfFacCiv = 4;                     //(Number) Multiplies the effect of racial profiling. Lower this number to simulate more multicultural civilian population
+_racProfFacEny = 7;                     //(Number) Multiplies the effect of racial profiling. Lower this number to simulate more multicultural enemy forces
 
 _regEnySide = east;                     //Units of this side will be classed as regular enemies (Side: can be east, west, independent) - if you don't need this, comment the line out (i.e. put // before _regEnySide, as in //_regEnySide = east;).
 _regBarbaric = true;                   //(Bool - true or false) Will this side lash out on civilians if it takes casualties and doesn't know the attacker?
@@ -32,16 +32,16 @@ _trespassMarkers = [""];                  //Names of additional markers for area
 
 //-------------------------Civilian Disguise settings-------------------------
 
-_civFactions = ["CIV_F","CIV_F_TANOA"]; //Array of factions whose vests are safe for undercover units to wear
+_civFactions = ["CIV_F_TANOA","CIV_F"]; //Array of factions whose vests are safe for undercover units to wear
 
 //(Array of classnames) Safe vests (on top of the specific factions above - useful if faction has randomisation script or to add items that are not used by the faction)
-_civilianVests = [];
+_civilianVests = ["V_pocketed_black_F","V_Pocketed_coyote_F","V_Pocketed_olive_F","V_LegStrapBag_blk_F","V_LegStrapBag_coyote_F","V_LegStrapBag_olive_F","V_Rangemaster_belt"];
 
 //(Array of classnames) Safe uniforms (on top of the specific factions above - useful if faction has randomisation script or to add items that are not used by the faction)
-_civilianUniforms = [];
+_civilianUniforms = ["U_BG_Guerilla2_1","U_BG_Guerilla3_1","U_OrestesBody","U_C_Man_casual_6_F","U_C_Poloshirt_blue","U_Marshal","U_I_C_Soldier_Bandit_4_F",""];
 
 //(Array of classnames) Safe headgear (will automatically include civilian headgear classes - useful if faction has randomisation script or to add items that are not used by the faction)
-_civilianHeadgear = [];
+_civilianHeadgear = ["H_CAP_tan","H_CAP_surfer","H_CAP_red","H_CAP_oli","H_CAP_blk_ION","H_CAP_blu","H_CAP_grn","H_CAP_blk","H_CAP_grn_BI","H_Booniehat_tan"];
 
 //(Array of classnames) Safe backpacks (will automatically include civilian backpack classes - useful if faction has randomisation script or to add items that are not used by the faction)
 _civilianBackpacks = ["B_FieldPack_blk","B_FieldPack_khk","B_TacticalPack_blk"];
@@ -54,7 +54,7 @@ _HMDallowed = false; //(Bool - true or false) Are HMDs (night vision goggles etc
 _noOffRoad = true; //Civilian vehicles driving more than 50 meters from the nearest road will be considered hostile
 
 //-------------------------Enemy Disguise settings-------------------------
-_incogFactions = ["45th_Airborne"]; //Array of enemy factions whose items and vehicles will allow the player to impersonate the enemy
+_incogFactions = ["O_CNAirborne"]; //Array of enemy factions whose items and vehicles will allow the player to impersonate the enemy
 
 //(Array of classnames) Safe vests (on top of the specific factions above - useful if faction has randomisation script or to add items that are not used by the faction)
 _incognitoVests = [];
