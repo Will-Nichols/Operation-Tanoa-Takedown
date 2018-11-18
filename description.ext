@@ -15,8 +15,8 @@ enableDebugConsole = 1;
 cba_settings_hasSettingsFile = 1;
 
 respawn = 3;
-respawndelay = 45;
-respawnOnStart = 0;
+respawndelay = 15;
+respawnOnStart = -1;
 respawnDialog = 0;
 DisabledAI = true;
 
