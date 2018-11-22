@@ -38,7 +38,7 @@ _civFactions = ["CIV_F_TANOA","CIV_F"]; //Array of factions whose vests are safe
 _civilianVests = ["V_pocketed_black_F","V_Pocketed_coyote_F","V_Pocketed_olive_F","V_LegStrapBag_blk_F","V_LegStrapBag_coyote_F","V_LegStrapBag_olive_F","V_Rangemaster_belt"];
 
 //(Array of classnames) Safe uniforms (on top of the specific factions above - useful if faction has randomisation script or to add items that are not used by the faction)
-_civilianUniforms = ["U_BG_Guerilla2_1","U_BG_Guerilla3_1","U_OrestesBody","U_C_Man_casual_6_F","U_C_Poloshirt_blue","U_Marshal","U_I_C_Soldier_Bandit_4_F",""];
+_civilianUniforms = ["U_BG_Guerilla2_1","U_BG_Guerilla3_1","U_OrestesBody","U_C_Man_casual_6_F","U_C_Poloshirt_blue","U_Marshal","U_I_C_Soldier_Bandit_4_F"];
 
 //(Array of classnames) Safe headgear (will automatically include civilian headgear classes - useful if faction has randomisation script or to add items that are not used by the faction)
 _civilianHeadgear = ["H_CAP_tan","H_CAP_surfer","H_CAP_red","H_CAP_oli","H_CAP_blk_ION","H_CAP_blu","H_CAP_grn","H_CAP_blk","H_CAP_grn_BI","H_Booniehat_tan"];

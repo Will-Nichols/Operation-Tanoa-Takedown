@@ -5,7 +5,7 @@ waitUntil {!isNil "ALiVE_STATIC_DATA_LOADED"};
  */
  
 ALIVE_factionDefaultTransport = [] call ALIVE_fnc_hashCreate;
-[ALIVE_factionDefaultTransport, "O_CNAirborne", ["O_45thAirborne_EQ_2050_MG_01",
+[ALIVE_factionDefaultTransport, "O_CNAirborne", ["O_CNAirborne_EQ_2050_MG_01",
 "O_CNAirborne_BJ_2022_01","O_CNAirborne_SX_2190_Transport_01","O_CNAirborne_EQ_2050_01","O_CNAirborne_EQ_2050_HQ_01","O_CNAirborne_EQ_2050_MED_01"]] call ALIVE_fnc_hashSet;
 /*
  * Mil logistics air transport vehicles per faction
