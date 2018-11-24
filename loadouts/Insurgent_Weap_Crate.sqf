@@ -14,5 +14,5 @@ _crate = _this select 0;
 			_crate addMagazineCargoGlobal ["rpa_weap_m3a1",10]; 
 			_crate addMagazineCargoGlobal ["rpa_mag_30x45acp_MHP",1000]; 
 			_crate addMagazineCargoGlobal ["arifle_TRG21_F", 50];
-			_crate addMagazineCargoGlobal ["ACE_30Rnd_556x45_Stanag_M995_AP_mag",2000];
+			_crate addMagazineCargoGlobal ["ACE_30Rnd_556x45_Stanag_M995_AP_mag",3000];
 	};
