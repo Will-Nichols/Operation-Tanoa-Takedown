@@ -1,5 +1,5 @@
 //comment "Exported from Arsenal by Nichols";
-//[_this,,"SFBreacher"] execVM "scripts\loadouts\createLoadout.sqf";
+//[this,"SFBreacher"] execVM "loadouts\SFBreacher.sqf";
 
 waitUntil {!isNull player};
 _unit = _this select 0;

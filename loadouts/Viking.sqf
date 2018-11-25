@@ -1,5 +1,5 @@
 //comment "Exported from Arsenal by Nichols";
-//[_this,,"Viking"] execVM "scripts\loadouts\createLoadout.sqf";
+//[this,"Viking"] execVM "loadouts\Viking.sqf";
 
 waitUntil {!isNull player};
 _unit = _this select 0;
@@ -39,13 +39,24 @@ for "_i" from 1 to 2 do {_this addItemToVest "SmokeShellGreen";};
 for "_i" from 1 to 2 do {_this addItemToVest "SmokeShellPurple";};
 for "_i" from 1 to 2 do {_this addItemToVest "SmokeShellRed";};
 for "_i" from 1 to 6 do {_this addItemToVest "Laserbatteries";};
+_this addBackpack "VSM_MulticamTropic_Backpack_Kitbag"
+for "_i" from 1 to 40 do {_this addItemToBackpack "ACE_elasticBandage";};
+for "_i" from 1 to 15 do {_this addItemToBackpack "ACE_epinephrine";};
+for "_i" from 1 to 15 do {_this addItemToBackpack "ACE_morphine";};
+for "_i" from 1 to 40 do {_this addItemToBackpack "ACE_packingBandage";};
+for "_i" from 1 to 3 do {_this addItemToBackpack "ACE_plasmaIV";};
+for "_i" from 1 to 5 do {_this addItemToBackpack "ACE_plasmaIV_250";};
+for "_i" from 1 to 12 do {_this addItemToBackpack "ACE_tourniquet";};
+for "_i" from 1 to 6 do {_this addItemToBackpack "Laserbatteries";};
+_this addItemtoBackpack "VSM_MulticamTropic_Boonie";
+_htis addItemToBackpack "SMA_supp1BOD_556";
 _this addHeadgear "VSM_Mich2000_CamoSprayOD";
 _this addGoggles "VSM_Goggles";
 
 comment "Add weapons";
 _this addWeapon "SMA_HK416CUSTOMCQBafgB";
 _this addPrimaryWeaponItem "SMA_SFPEQ_HKTOP_BLK";
-_this addPrimaryWeaponItem "sma_spitfire_03_rds_black";
+_this addPrimaryWeaponItem "SMA_ELCAN_SPECTER_GREEN_ARDRDS_4z";
 _this addWeapon "hlc_pistol_P229R_Combat";
 _this addHandgunItem "hlc_acc_TLR1";
 _this addHandgunItem "HLC_optic228_Siglite";

@@ -1,4 +1,4 @@
-//null = [_this] execVM "scripts\loadouts\HLC_LRR_ammobox.sqf";
+//null = [this] execVM "loadouts\HLC_LRR_ammobox.sqf";
 
 if(!isServer) exitWith {}; 
 _crate = _this select 0; 

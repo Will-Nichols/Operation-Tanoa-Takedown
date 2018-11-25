@@ -161,7 +161,7 @@ if (isPlayer _unit) then {
 			};
 		};
 
-        sleep 0.3;
+        sleep 0.2;
 
 		//Trespassing check
 		if !(_unit getVariable ["INC_trespassAlert",true]) then {
@@ -190,6 +190,38 @@ if (isPlayer _unit) then {
 	        } count INC_trespassMarkers;
 		};
 
+		sleep 0.1;
+
+		//High security check
+		if ((missionNamespace getVariable ["INC_highSecCheckActive",false]) && {_unit getVariable ["INC_goneIncog",false]} && {_unit getVariable ["INC_trespassAlert",false]}) then {
+
+			if !(_unit getVariable ["INC_highSecAlert",true]) then {
+		        {
+		            if (_unit inArea _x) exitWith {
+
+		                private _activeMarker = _x;
+
+		                _unit setVariable ["INC_highSecAlert",true];
+
+						[_unit,_activeMarker] spawn {
+							params ["_unit","_activeMarker"];
+
+							waitUntil {
+
+								sleep 1;
+
+								!(_unit inArea _activeMarker);
+							};
+							_unit setVariable ["INC_highSecAlert",false];
+
+						};
+					};
+
+		            false
+		        } count INC_highSecMarkers;
+			};
+		};
+
 		sleep 0.2;
 
 		(!(_unit getVariable ["isUndercover",false]) || {!(alive _unit)} || {!local _unit})
@@ -206,7 +238,7 @@ if (isPlayer _unit) then {
 
 	waitUntil {
 
-		sleep 4;
+		sleep 2;
 
 		private _alertedRegKnows = ([_unit, INC_regEnySide] call INCON_ucr_fnc_isKnownToSide);
 
@@ -221,20 +253,39 @@ if (isPlayer _unit) then {
 		_unit setVariable ["INC_asymKnowsSO", _alertedAsymKnows, true];
 		_unit setVariable ["INC_anyKnowsSO", _anyAlerted, true];
 
-		if ((_unit getVariable ["INC_compromisedValue",1]) > 1) then {
+		sleep 0.2;
 
-			_unit setVariable ["INC_compromisedValue",((_unit getVariable ["INC_compromisedValue",1]) - (random 0.002)),true];
-		};
+		if !(_unit getVariable ["INC_isCompromised",false]) then {
 
-		if ((_unit getVariable ["INC_compromisedValue",1]) > 3) then {
+			private _compValue = _unit getVariable ["INC_compromisedValue",1];
 
-			_compDistMulti = ((getPosWorld _unit) distance (_unit getVariable ["INC_lastSeenLoc",(getPosWorld _unit)])) / 40000;
+			if (_compValue > 1) then {
 
-			_unit setVariable ["INC_compromisedValue",((_unit getVariable ["INC_compromisedValue",1]) - _compDistMulti),true];
-		};
+				private _coolOffIncriment = random 0.002;
 
-		if ((_unit getVariable ["INC_compromisedValue",1]) < 1) then {
-			_unit setVariable ["INC_compromisedValue",1,true];
+				if !(_anyAlerted) then {_coolOffIncriment = _coolOffIncriment * 5};
+
+				_unit setVariable ["INC_compromisedValue",(_compValue - _coolOffIncriment),true];
+			};
+
+			sleep 0.2;
+
+			if (_compValue > 2) then {
+
+				_compDistMulti = ((getPosWorld _unit) distance (_unit getVariable ["INC_lastSeenLoc",(getPosWorld _unit)])) / 40000;
+
+				if (_compDistMulti == 0) then {_compDistMulti = 0.002};
+
+				if !(_anyAlerted) then {_compDistMulti = (_compDistMulti * (10 * _compValue))};
+
+				_unit setVariable ["INC_compromisedValue",(_compValue - _compDistMulti),true];
+			};
+
+			sleep 0.2;
+
+			if (_compValue < 1) then {
+				_unit setVariable ["INC_compromisedValue",1,true];
+			};
 		};
 
 		(!(_unit getVariable ["isUndercover",false]) || !(alive _unit))

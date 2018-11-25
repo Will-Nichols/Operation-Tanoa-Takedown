@@ -1,5 +1,5 @@
 //comment "Exported from Arsenal by Nichols";
-//[_this,,"SFComms"] execVM "scripts\loadouts\createLoadout.sqf";
+//[this,"SFComms"] execVM "loadouts\SFComms.sqf";
 
 waitUntil {!isNull player};
 _unit = _this select 0;
@@ -44,7 +44,7 @@ comment "Add weapons";
 _this addWeapon "SMA_HK416CUSTOMCQBafgB";
 _this addPrimaryWeaponItem "SMA_supp1BOD_556";
 _this addPrimaryWeaponItem "SMA_SFPEQ_HKTOP_BLK";
-_this addPrimaryWeaponItem "sma_spitfire_03_rds_black";
+_this addPrimaryWeaponItem "SMA_ELCAN_SPECTER_GREEN_ARDRDS_4z";
 _this addWeapon "hlc_pistol_P229R_Combat";
 _this addHandgunItem "hlc_muzzle_TiRant9S";
 _this addHandgunItem "hlc_acc_TLR1";

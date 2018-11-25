@@ -1,5 +1,5 @@
 //comment "Exported from Arsenal by Nichols"
-//[_this,,"SFSniper"] execVM "scripts\loadouts\createLoadout.sqf";
+//[this,"SFSniper"] execVM "loadouts\SFSniper.sqf";
 
 waitUntil {!isNull player};
 _unit = _this select 0;
@@ -41,7 +41,7 @@ _this addBackpack "VSM_MulticamTropic_carryall";
 (backpack _this) addWeaponCargo "SMA_HK416CUSTOMCQBafgB";
 _this addItemToBackpack "SMA_supp1BOD_556";
 _this addItemToBackpack "SMA_SFPEQ_HKTOP_BLK";
-_this addItemToBackpack "sma_spitfire_03_rds_black";
+_this addItemToBackpack "SMA_MICRO_T2_3XDOWN";
 _this addItemToBackpack "VSM_MulticamTropic_Boonie";
 _this addItemToBackpack "ACE_Kestrel4500";
 _this addItemToBackpack "ACE_RangeCard";

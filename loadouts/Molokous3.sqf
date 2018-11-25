@@ -1,5 +1,5 @@
 //comment "Exported from Arsenal by Nichols";
-//[_this,"Molokous3"] execVM "scripts\loadouts\createLoadout.sqf";
+//[this,"Molokous3"] execVM "loadouts\Molokous3.sqf";
 
 waitUntil {!isNull player};
 _unit = _this select 0;

@@ -1,5 +1,5 @@
 //comment "Exported from Arsenal by Nichols";
-//[_this,,"SFWeapons"] execVM "scripts\loadouts\createLoadout.sqf";
+//[this,"SFWeapons"] execVM "loadouts\SFWeapons.sqf";
 
 waitUntil {!isNull player};
 _unit = _this select 0;
@@ -35,11 +35,9 @@ for "_i" from 1 to 4 do {_this addItemToVest "ACE_M84";};
 for "_i" from 1 to 3 do {_this addItemToVest "1Rnd_Smoke_Grenade_shell";};
 for "_i" from 1 to 3 do {_this addItemToVest "UGL_FlareWhite_F";};
 for "_i" from 1 to 3 do {_this addItemToVest "hlc_13Rnd_9x19_B_P228";};
-for "_i" from 1 to 2 do {_this addItemToVest "SMA_150Rnd_762_M80A1_Mixed";};
-_this addItemToVest "SMA_150Rnd_762_M80A1";
+for "_i" from 1 to 3 do {_this addItemToVest "SMA_150Rnd_762_M80A1_Mixed";};
 _this addBackpack "VSM_MulticamTropic_Backpack_Kitbag";
 _this addItemToBackpack "VSM_MulticamTropic_Boonie";
-_this addItemToBackpack "SMA_150Rnd_762_M80A1_Mixed";
 for "_i" from 1 to 2 do {_this addItemToBackpack "1Rnd_Smoke_Grenade_shell";};
 for "_i" from 1 to 2 do {_this addItemToBackpack "1Rnd_SmokeRed_Grenade_shell";};
 for "_i" from 1 to 3 do {_this addItemToBackpack "SMA_150Rnd_762_M80A1";};
