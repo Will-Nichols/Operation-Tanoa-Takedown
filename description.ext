@@ -20,11 +20,15 @@ respawnOnStart = -1;
 respawnDialog = 0;
 DisabledAI = true;
 
+class Extended_InitPost_EventHandlers {
+     class CAManBase {
+		init = "_this call (compile preprocessFileLineNumbers 'postInitXEH.sqf')";
+	};
+};
+
 class CfgFunctions
 {
 	#include "INC_undercover\cfgFunctions.hpp"
-	#include "vcom\cfgFunctions.hpp"
-	    createShortcuts = 1;
 };
 
 class CfgRemoteExec
@@ -39,10 +43,4 @@ class CfgRemoteExec
 
 class Extended_PreInit_EventHandlers {
 	VCM_CBASettings = call compile preprocessFileLineNumbers "Vcom\Functions\VCM_CBASettings.sqf";
-};
-
-class Extended_InitPost_EventHandlers {
-     class CAManBase {
-		init = "_this call (compile preprocessFileLineNumbers 'postInitXEH.sqf')";
-	};
 };
