@@ -46,7 +46,7 @@ _this addHeadgear "VSM_MulticamTropic_OPS_2";
 comment "Add weapons";
 _this addWeapon "sma_minimi_mk3_762tsb_wdl";
 _this addPrimaryWeaponItem "sma_gemtech_one_wdl";
-_this addPrimaryWeaponItem "SMA_ELCAN_SPECTER_GREEN_ARDRDS";
+_this addPrimaryWeaponItem "SMA_ELCAN_SPECTER_GREEN_ARDRDS_4z";
 _this addWeapon "hlc_pistol_P229R_Combat";
 _this addHandgunItem "hlc_muzzle_TiRant9S";
 _this addHandgunItem "hlc_acc_TLR1";

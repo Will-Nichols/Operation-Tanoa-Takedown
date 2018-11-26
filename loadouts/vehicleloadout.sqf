@@ -1,14 +1,14 @@
 //this is vehicloadout.sqf (insert your classnames and extra stuff)
 if(!isServer) exitWith {};
 
-_prowler = _this select 0;
+_vehicle = _this select 0;
 clearWeaponCargoGlobal _apc;
 clearMagazineCargoGlobal _apc;
 clearItemCargoGlobal _apc;
  
-_prowler addWeaponCargoGlobal ["Myrifle", 5];
-_prowler addMagazineCargoGlobal ["Mymag", 5];
-_prowler addItemCargoGlobal ["MyScope", 5];
+_vehicle addWeaponCargoGlobal ["Myrifle", 5];
+_vehicle addMagazineCargoGlobal ["Mymag", 5];
+_vehicle addItemCargoGlobal ["MyScope", 5];
 
 //then in the vehicles's init put
 

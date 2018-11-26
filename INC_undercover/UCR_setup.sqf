@@ -22,7 +22,7 @@ _racProfFacEny = 7;                     //(Number) Multiplies the effect of raci
 
 _regEnySide = east;                     //Units of this side will be classed as regular enemies (Side: can be east, west, independent) - if you don't need this, comment the line out (i.e. put // before _regEnySide, as in //_regEnySide = east;).
 _regBarbaric = true;                   //(Bool - true or false) Will this side lash out on civilians if it takes casualties and doesn't know the attacker?
-_regDetectRadius = 10;                  //Default detection radius for regular troops (this will expand and contract based on weather, time of day, and how the undercover unit is acting - civilians within this radius will be under much more scrutinty)
+_regDetectRadius = 8;                  //Default detection radius for regular troops (this will expand and contract based on weather, time of day, and how the undercover unit is acting - civilians within this radius will be under much more scrutinty)
 
 _asymEnySide = sideEmpty;             //Units of this side will be classed as asymetric enemies (Side: can be east, west, independent) - if you don't need this, comment the line out (i.e. put // before _asymEnySide, as in //_asymEnySide = east;).
 _asymBarbaric = true;                   //(Bool - true or false) Will this side have a small chance of lashing out on civilians if it takes casualties and doesn't know the attacker?
@@ -70,7 +70,7 @@ _incognitoHeadgear = [];
 _incognitoBackpacks = [];
 
 //(Array of classnames) Safe uniforms (on top of the specific factions above - useful if faction has randomisation script or to add items that are not used by the faction)
-_incognitoUniforms = [];
+_incognitoUniforms = ["U_C_Journalist","U_C_Scientist"];
 
 _incogVehArray = []; //(Array of classnames) Additional incognito vehicles (vehicles from the faction above will automatically count, as will all _highSecVehicles)
 
@@ -84,23 +84,23 @@ All high security zones are automatically considered non-civilian territory, but
 In these settings, you can .
 */
 
-_highSecMarkers = []; 					//Names of additional markers for areas that are designated high security zones that require specific uniforms to enter without raising suspicion (any with "INC_highSec" - case sensitive - somewhere in the marker name will automatically be included)
+_highSecMarkers = ["INC_tre_NoMan1","INC_tre_NoMan2","INC_tre_NoMan3","INC_tre_NoMan4","INC_tre_NoMan5","INC_tre_NoMan6","INC_tre_NoMan7","INC_tre_NoMan8","INC_tre_NoMan9","INC_tre_NoMan10","INC_tre_NoMan11","INC_tre_NoMan12","INC_tre_NoMan13","INC_tre_NoMan14","INC_tre_NoMan15","INC_tre_NoMan16","INC_tre_NoMan17","INC_tre_NoMan18","INC_tre_NoMan19","INC_tre_NoMan20","INC_tre_NoMan21",]; 					//Names of additional markers for areas that are designated high security zones that require specific uniforms to enter without raising suspicion (any with "INC_highSec" - case sensitive - somewhere in the marker name will automatically be included)
 
 _highSecInstantHostile = false;         // If true, units entering high security areas with the wrong uniform will be instantly deemed hostile by enemy forces. If false, it will be highly suspicious.
 
-_highSecVehicles = [];                  // (Array of classnames) Vehicles that can enter high security areas without raising suspicion (uniforms will still be noticed according to how open the vehicle is)
+_highSecVehicles = ["CIGT_Prowler","B_GEN_Offroad_01_gen_F","O_CNAirborne_CS_VP4_01","O_CNAirborne_BJ_2022_Patrol_01","O_CNAirborne_BJ_2022_01","O_CNAirborne_EQ_2050_Recon_MG_01","O_CNAirborne_EQ_2050_Recon_GL_01","O_CNAirborne_EQ_2050_MG_01","O_CNAirborne_EQ_2050_GL_01","O_CNAirborne_EQ_2050_ATGM_01","O_CNAirborne_EQ_2050_UAV_Controller_01","O_CNAirborne_EQ_2050_MED_01","O_CNAirborne_EQ_2050_HQ_01"];                  // (Array of classnames) Vehicles that can enter high security areas without raising suspicion (uniforms will still be noticed according to how open the vehicle is)
 
-_highSecurityUniforms = [];             // (Array of classnames) Uniforms that allow entry into high security areas (defined by high security markers)
+_highSecurityUniforms = ["U_C_Journalist","U_C_Scientist","U_B_GEN_Commander_F","U_B_CTRG_Soldier_F","PLA_Uniform_PLAWOOD2","PLA_CombatUniform_SW"."PLA_CombatUniform_SG","PLA_CombatUniform_SGCB","PLA_CombatUniform_SWCB"];             // (Array of classnames) Uniforms that allow entry into high security areas (defined by high security markers)
 
 _highSecItemCheck = true;               // Check for disallowed items that aren't in the permitted list? Each non-permitted item will incur a suspicion penality. Set to false if high security checks just include uniform only.
 
-_highSecItems = [];                     // (Array of classnames) List of items such as vests, headgear, hats etc., that won't cause suspicion in high security areas (only works on foot for now)
+_highSecItems = ["H_Cap_police","H_Beret_gen_F","H_MilCap_gen_F","V_TacVest_gen_F","V_TacVest_blk_POLICE","PLA_T15Vest_RD","PLAFOR_Vest","V_TacVestIR_blk0","V_PlateCarrier2_blk","V_PlateCarrierH_CTRG"];                     // (Array of classnames) List of items such as vests, headgear, hats etc., that won't cause suspicion in high security areas (only works on foot for now)
 
 _hsItChkOutside = true;                 // The high security item check will occur if wearing a high security uniform even in non-high security zones. Useful if the high security uniform is, for example, a businessman or scientist, who would look weird carrying a gun and helmet.
 
 _hsMustBeUnarmed = true;               // Units carrying weapons will be considered hostile (requires _highSecItemCheck to be set to true).
 
-_highSecItemCheckScalar = 1;            // Multiplies the level of suspicion caused by each suspect item when in a high security zone
+_highSecItemCheckScalar = 2;            // Multiplies the level of suspicion caused by each suspect item when in a high security zone
 
 
 //-------------------------Civilian recruitment settings-------------------------
@@ -117,7 +117,7 @@ _armedCivPercentage = 70;           //(Number - 0 to 100) Max percentage of civi
 _civWpnArray = ["arifle_AKS_F","arifle_AKM_F","hgun_Pistol_01_F","hgun_Rook40_F","hgun_ACPC2_F","hgun_Rook40_F"];
 
 //Items that civilians may carry
-_civItemArray = ["ACE_Cellphone","ACE_Banana","ACE_Flashlight_KSF1","ACE_SpraypaintBlack","itemRadio","ACE_RangeCard","ACE_key_civ","ACE_key_lockpick","ACE_fieldDressing","IEDUrbanSmall_F","IEDUrbanSmall_F"];
+_civItemArray = ["ACE_Cellphone","ACE_Banana","ACE_Flashlight_KSF1","ACE_SpraypaintBlack","itemRadio","ACE_RangeCard","ACE_key_civ","ACE_key_lockpick","ACE_fieldDressing"];
 
 //Civilian backpack classes (array of classnames)
-_civPackArray = ["B_FieldPack_blk","B_FieldPack_cbr","B_FieldPack_khk","B_FieldPack_oucamo","B_Carryall_cbr"];
+_civPackArray = ["B_FieldPack_blk","B_FieldPack_cbr","B_FieldPack_khk","B_Carryall_cbr"];

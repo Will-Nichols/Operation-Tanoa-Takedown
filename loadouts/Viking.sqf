@@ -49,7 +49,7 @@ for "_i" from 1 to 5 do {_this addItemToBackpack "ACE_plasmaIV_250";};
 for "_i" from 1 to 12 do {_this addItemToBackpack "ACE_tourniquet";};
 for "_i" from 1 to 6 do {_this addItemToBackpack "Laserbatteries";};
 _this addItemtoBackpack "VSM_MulticamTropic_Boonie";
-_htis addItemToBackpack "SMA_supp1BOD_556";
+_this addItemToBackpack "SMA_supp1BOD_556";
 _this addHeadgear "VSM_Mich2000_CamoSprayOD";
 _this addGoggles "VSM_Goggles";
 
