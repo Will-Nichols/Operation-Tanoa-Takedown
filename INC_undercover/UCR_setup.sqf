@@ -12,21 +12,21 @@ _undercoverUnitSide = independent;             //What side is/are the undercover
 
 //-------------------------General Settings-------------------------
 
-_debug = false;                         //Set to true for debug
+_debug = true;                         //Set to true for debug
 _fullAIfunctionality = true;            //Enable all checks on AI (may degrade performace very slightly for large groups, 15+)
 _easyMode = true;                       //Disguise checks will also reveal if the player's disguise is working or not
 
 _racism = true;                         //Enemies will notice if you aren't the race of the faction you're pretending to be (making you easier to detect if nothing is covering your face)
-_racProfFacCiv = 4;                     //(Number) Multiplies the effect of racial profiling. Lower this number to simulate more multicultural civilian population
-_racProfFacEny = 7;                     //(Number) Multiplies the effect of racial profiling. Lower this number to simulate more multicultural enemy forces
+_racProfFacCiv = 1;                     //(Number) Multiplies the effect of racial profiling. Lower this number to simulate more multicultural civilian population
+_racProfFacEny = 1;                     //(Number) Multiplies the effect of racial profiling. Lower this number to simulate more multicultural enemy forces
 
 _regEnySide = east;                     //Units of this side will be classed as regular enemies (Side: can be east, west, independent) - if you don't need this, comment the line out (i.e. put // before _regEnySide, as in //_regEnySide = east;).
 _regBarbaric = true;                   //(Bool - true or false) Will this side lash out on civilians if it takes casualties and doesn't know the attacker?
 _regDetectRadius = 8;                  //Default detection radius for regular troops (this will expand and contract based on weather, time of day, and how the undercover unit is acting - civilians within this radius will be under much more scrutinty)
 
-_asymEnySide = sideEmpty;             //Units of this side will be classed as asymetric enemies (Side: can be east, west, independent) - if you don't need this, comment the line out (i.e. put // before _asymEnySide, as in //_asymEnySide = east;).
-_asymBarbaric = true;                   //(Bool - true or false) Will this side have a small chance of lashing out on civilians if it takes casualties and doesn't know the attacker?
-_asymDetectRadius = 15;                 //Default detection radius for asym troops (this will expand and contract based on weather, time of day, and how the undercover unit is acting - civilians within this radius will be under much more scrutinty)
+//_asymEnySide = sideEmpty;             //Units of this side will be classed as asymetric enemies (Side: can be east, west, independent) - if you don't need this, comment the line out (i.e. put // before _asymEnySide, as in //_asymEnySide = east;).
+//_asymBarbaric = true;                   //(Bool - true or false) Will this side have a small chance of lashing out on civilians if it takes casualties and doesn't know the attacker?
+//_asymDetectRadius = 15;                 //Default detection radius for asym troops (this will expand and contract based on weather, time of day, and how the undercover unit is acting - civilians within this radius will be under much more scrutinty)
 
 _globalSuspicionModifier = 1;           //Scales the level of suspicion of enemies. 1 is default, 2 means units are twice as likely to see through undercover unit's disguises, 0.5 means half as likely etc.
 
@@ -55,7 +55,7 @@ _noOffRoad = true; //Civilian vehicles driving more than 50 meters from the near
 
 
 //-------------------------Enemy Disguise settings-------------------------
-_incogFactions = ["O_CNAirborne"]; //Array of enemy factions whose items and vehicles will allow the player to impersonate the enemy
+_incogFactions = ["O_CNAirborne","CIGT"]; //Array of enemy factions whose items and vehicles will allow the player to impersonate the enemy
 
  //Names of additional markers for areas that would be considered trespassing (any with "INC_tre" - case sensitive - somewhere in the marker name will automatically be included)
 _trespassMarkers = [];
@@ -84,13 +84,13 @@ All high security zones are automatically considered non-civilian territory, but
 In these settings, you can .
 */
 
-_highSecMarkers = ["INC_tre_NoMan1","INC_tre_NoMan2","INC_tre_NoMan3","INC_tre_NoMan4","INC_tre_NoMan5","INC_tre_NoMan6","INC_tre_NoMan7","INC_tre_NoMan8","INC_tre_NoMan9","INC_tre_NoMan10","INC_tre_NoMan11","INC_tre_NoMan12","INC_tre_NoMan13","INC_tre_NoMan14","INC_tre_NoMan15","INC_tre_NoMan16","INC_tre_NoMan17","INC_tre_NoMan18","INC_tre_NoMan19","INC_tre_NoMan20","INC_tre_NoMan21",]; 					//Names of additional markers for areas that are designated high security zones that require specific uniforms to enter without raising suspicion (any with "INC_highSec" - case sensitive - somewhere in the marker name will automatically be included)
+_highSecMarkers = ["high_security_zone_1","high_security_zone_2","high_security_zone_3","high_security_zone_4"]; 					//Names of additional markers for areas that are designated high security zones that require specific uniforms to enter without raising suspicion (any with "INC_highSec" - case sensitive - somewhere in the marker name will automatically be included)
 
 _highSecInstantHostile = false;         // If true, units entering high security areas with the wrong uniform will be instantly deemed hostile by enemy forces. If false, it will be highly suspicious.
 
 _highSecVehicles = ["CIGT_Prowler","B_GEN_Offroad_01_gen_F","O_CNAirborne_CS_VP4_01","O_CNAirborne_BJ_2022_Patrol_01","O_CNAirborne_BJ_2022_01","O_CNAirborne_EQ_2050_Recon_MG_01","O_CNAirborne_EQ_2050_Recon_GL_01","O_CNAirborne_EQ_2050_MG_01","O_CNAirborne_EQ_2050_GL_01","O_CNAirborne_EQ_2050_ATGM_01","O_CNAirborne_EQ_2050_UAV_Controller_01","O_CNAirborne_EQ_2050_MED_01","O_CNAirborne_EQ_2050_HQ_01"];                  // (Array of classnames) Vehicles that can enter high security areas without raising suspicion (uniforms will still be noticed according to how open the vehicle is)
 
-_highSecurityUniforms = ["U_C_Journalist","U_C_Scientist","U_B_GEN_Commander_F","U_B_CTRG_Soldier_F","PLA_Uniform_PLAWOOD2","PLA_CombatUniform_SW"."PLA_CombatUniform_SG","PLA_CombatUniform_SGCB","PLA_CombatUniform_SWCB"];             // (Array of classnames) Uniforms that allow entry into high security areas (defined by high security markers)
+_highSecurityUniforms = ["U_C_Journalist","U_C_Scientist","U_B_GEN_Commander_F","U_B_CTRG_Soldier_F","PLA_Uniform_PLAWOOD2","PLA_CombatUniform_SW","PLA_CombatUniform_SG","PLA_CombatUniform_SGCB","PLA_CombatUniform_SWCB"];             // (Array of classnames) Uniforms that allow entry into high security areas (defined by high security markers)
 
 _highSecItemCheck = true;               // Check for disallowed items that aren't in the permitted list? Each non-permitted item will incur a suspicion penality. Set to false if high security checks just include uniform only.
 
@@ -114,7 +114,7 @@ _civRecruitEnabled = true;          //(Bool - true or false) Set this to false t
 _armedCivPercentage = 70;           //(Number - 0 to 100) Max percentage of civilians armed with weapons from the array below, either on their person or in their backpacks (will only work if _civRecruitEnabled is set to true, otherwise this is ignored)
 
 //Weapon classnames for armed civilians (array of classnames)
-_civWpnArray = ["arifle_AKS_F","arifle_AKM_F","hgun_Pistol_01_F","hgun_Rook40_F","hgun_ACPC2_F","hgun_Rook40_F"];
+_civWpnArray = ["hlc_Pistol_M11","hlc_rifle_M1903A1"];
 
 //Items that civilians may carry
 _civItemArray = ["ACE_Cellphone","ACE_Banana","ACE_Flashlight_KSF1","ACE_SpraypaintBlack","itemRadio","ACE_RangeCard","ACE_key_civ","ACE_key_lockpick","ACE_fieldDressing"];
