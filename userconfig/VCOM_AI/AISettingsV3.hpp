@@ -14,31 +14,35 @@ Vcm_Settings =
 	Vcm_ActivateAI = true; //Set this to false to disable VcomAI. It can be set to true at any time to re-enable Vcom AI
 	VcmAI_ActiveList = []; //Leave this alone.
 	Vcm_ArtilleryArray = []; //Leave this alone
-	VCM_ARTYENABLE = true; //Enable improved artillery handling.
-	VCM_AIMagLimit = 1; //Number of mags remaining before AI looks for ammo.
-	VCM_Debug = false; //Enable debug mode.
-	VCM_MINECHANCE = 5; //Chance to lay a mine
+	
+	//VCOM ARTILLERY. Only one kind of advanced artillery can be used at a time.
+	VCM_ARTYENABLE = true; //Enable improved artillery handling from Vcom.
 	VCM_ARTYLST = []; //List of all AI inside of artillery pieces, leave this alone.
 	VCM_ARTYDELAY = 300; //Delay between squads requesting artillery
 	VCM_ARTYWT = -(VCM_ARTYDELAY);
 	VCM_ARTYET = -(VCM_ARTYDELAY);
 	VCM_ARTYRT = -(VCM_ARTYDELAY);
-	VCM_ARTYSPREAD = 400; //Spread of artillery rounds;	
-	VCM_SIDEENABLED = [east]; //Sides that will activate Vcom AI
+	VCM_ARTYSPREAD = 400; //Spread of artillery rounds;		
+	//Fire For Effect Artillery handling. Only one kind of advanced atrillery can be used at a time. - https://forums.bohemia.net/forums/topic/159152-fire-for-effect-the-god-of-war-smart-simple-ai-artillery/
+	VCM_FFEARTILLERY = true;
+
+	VCM_AIMagLimit = 2; //Number of mags remaining before AI looks for ammo.
+	VCM_Debug = false; //Enable debug mode.
+	VCM_MINECHANCE = 10; //Chance to lay a mine
+	VCM_SIDEENABLED = [east,resistance]; //Sides that will activate Vcom AI
 	VCM_RAGDOLL = true; //Should AI ragdoll when hit
-	VCM_RAGDOLLCHC = 15; //CHANCE AI RAGDOLL	
-	VCM_HEARINGDISTANCE = 500; //Distance AI hear unsuppressed gunshots.
+	VCM_RAGDOLLCHC = 50; //CHANCE AI RAGDOLL	
+	VCM_FullSpeed = true; //Enforce full speedmode during combat (Does not reset after combat end)
+	VCM_HEARINGDISTANCE = 800; //Distance AI hear unsuppressed gunshots.
 	VCM_WARNDIST = 1000; //How far AI can request help from other groups.
 	VCM_WARNDELAY = 30; //How long the AI have to survive before they can call in for support. This activates once the AI enter combat.
 	VCM_STATICARMT = 300; //How long AI stay on static weapons when initially arming them. This is just for AI WITHOUT static bags. They will stay for this duration when NO ENEMIES ARE SEEN, or their group gets FAR away.	
-	VCM_StealVeh = false; //Will the AI steal vehicles.
-	VCM_AIDISTANCEVEHPATH = 1000; //Distance AI check from the squad leader to steal vehicles
+	VCM_StealVeh = true; //Will the AI steal vehicles.
+	VCM_AIDISTANCEVEHPATH = 100; //Distance AI check from the squad leader to steal vehicles
 	VCM_ADVANCEDMOVEMENT = true; //True means AI will actively generate waypoints if no other waypoints are generated for the AI group (2 or more). False disables this advanced movements.
 	VCM_FRMCHANGE = true; //AI GROUPS WILL CHANGE FORMATIONS TO THEIR BEST GUESS.
 	VCM_SKILLCHANGE = true; //AI Groups will have their skills changed by Vcom.
-	
-	VCM_ATTACHMENTIGNORE = []; //ADD WEAPON ATTACHMENT CLASSNAMES HERE THAT SHOULD 'NOT' COUNT AS A SUPPRESSOR. VCM_ATTACHMENTIGNORE = ["Atch1","Atch2","Atch3"];
-	
+		
 	//AI SKILL SETTINGS HERE!!!!!!!!!!!!
 	//LOW DIFFICULTY
 	//VCM_AIDIFA = [['aimingAccuracy',0.15],['aimingShake',0.1],['aimingSpeed',0.25],['commanding',1],['courage',1],['endurance',1],['general',0.5],['reloadSpeed',1],['spotDistance',0.8],['spotTime',0.8]];
@@ -124,6 +128,7 @@ Vcm_Settings =
 			};
 			
 		} forEach (units _this);
-	};	
+	};
 	
+	diag_log "VCOM: Loaded Userconfig";
 };

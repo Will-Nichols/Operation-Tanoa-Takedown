@@ -4,7 +4,7 @@ waitUntil {!isNil "CBAACT"};
 if !(CBAACT) exitwith {};
 
 [
-    "Vcm_ActivateAI", // Internal setting name, should always contain a tag! This will be the global variable which takes the value of the setting.
+    "VCM_ActivateAI", // Internal setting name, should always contain a tag! This will be the global variable which takes the value of the setting.
     "CHECKBOX", // setting type
     "Vcom Active", // Pretty name shown inside the ingame settings menu. Can be stringtable entry.
     "VCOM SETTINGS", // Pretty name of the category where the setting can be found. Can be stringtable entry.
@@ -12,7 +12,7 @@ if !(CBAACT) exitwith {};
     true, // "_isGlobal" flag. Set this to true to always have this setting synchronized between all clients in multiplayer
     {  
         params ["_value"];
-        Vcm_ActivateAI = _value;
+        VCM_ActivateAI = _value;
     } // function that will be executed once on mission start and every time the setting is changed.
 ] call CBA_Settings_fnc_init;
 
@@ -21,7 +21,7 @@ if !(CBAACT) exitwith {};
     "CHECKBOX", // setting type
     "Enable Debug Mode. Mostly systemchat messages.", // Pretty name shown inside the ingame settings menu. Can be stringtable entry.
     "VCOM SETTINGS", // Pretty name of the category where the setting can be found. Can be stringtable entry.
-		false,// data for this setting:
+	false,// data for this setting:
     true, // "_isGlobal" flag. Set this to true to always have this setting synchronized between all clients in multiplayer
     {  
         params ["_value"];
@@ -47,7 +47,7 @@ if !(CBAACT) exitwith {};
     "CHECKBOX", // setting type
     "Enable AI use of Artillery", // Pretty name shown inside the ingame settings menu. Can be stringtable entry.
     "VCOM SETTINGS", // Pretty name of the category where the setting can be found. Can be stringtable entry.
-    true, // data for this setting:
+    false, // data for this setting:
     true, // "_isGlobal" flag. Set this to true to always have this setting synchronized between all clients in multiplayer
     {  
         params ["_value"];
@@ -60,7 +60,7 @@ if !(CBAACT) exitwith {};
     "CHECKBOX", // setting type
     "AI steal empty/unlocked vehicles?", // Pretty name shown inside the ingame settings menu. Can be stringtable entry.
     "VCOM SETTINGS", // Pretty name of the category where the setting can be found. Can be stringtable entry.
-		true,// data for this setting:
+	true,// data for this setting:
     true, // "_isGlobal" flag. Set this to true to always have this setting synchronized between all clients in multiplayer
     {  
         params ["_value"];
@@ -69,11 +69,24 @@ if !(CBAACT) exitwith {};
 ] call CBA_Settings_fnc_init;
 
 [
+    "VCM_ForceSpeed", // Internal setting name, should always contain a tag! This will be the global variable which takes the value of the setting.
+    "CHECKBOX", // setting type
+    "Enforce AI Speed 'FULL'?", // Pretty name shown inside the ingame settings menu. Can be stringtable entry.
+    "VCOM SETTINGS", // Pretty name of the category where the setting can be found. Can be stringtable entry.
+	true,// data for this setting:
+    true, // "_isGlobal" flag. Set this to true to always have this setting synchronized between all clients in multiplayer
+    {  
+        params ["_value"];
+        VCM_FullSpeed = _value;
+    } // function that will be executed once on mission start and every time the setting is changed.
+] call CBA_Settings_fnc_init;
+
+[
     "VCM_ADVANCEDMOVEMENT", // Internal setting name, should always contain a tag! This will be the global variable which takes the value of the setting.
     "CHECKBOX", // setting type
     "AI generate new waypoints to flank.", // Pretty name shown inside the ingame settings menu. Can be stringtable entry.
     "VCOM SETTINGS", // Pretty name of the category where the setting can be found. Can be stringtable entry.
-		true,// data for this setting:
+	true,// data for this setting:
     true, // "_isGlobal" flag. Set this to true to always have this setting synchronized between all clients in multiplayer
     {  
         params ["_value"];
@@ -86,7 +99,7 @@ if !(CBAACT) exitwith {};
     "CHECKBOX", // setting type
     "AI change formations based on location.", // Pretty name shown inside the ingame settings menu. Can be stringtable entry.
     "VCOM SETTINGS", // Pretty name of the category where the setting can be found. Can be stringtable entry.
-		true,// data for this setting:
+	true,// data for this setting:
     true, // "_isGlobal" flag. Set this to true to always have this setting synchronized between all clients in multiplayer
     {  
         params ["_value"];
@@ -99,7 +112,7 @@ if !(CBAACT) exitwith {};
     "CHECKBOX", // setting type
     "AI impacted by Vcom skill settings.", // Pretty name shown inside the ingame settings menu. Can be stringtable entry.
     "VCOM SETTINGS", // Pretty name of the category where the setting can be found. Can be stringtable entry.
-		true,// data for this setting:
+	true,// data for this setting:
     true, // "_isGlobal" flag. Set this to true to always have this setting synchronized between all clients in multiplayer
     {  
         params ["_value"];
@@ -125,7 +138,7 @@ if !(CBAACT) exitwith {};
     "CHECKBOX", // setting type
     "AI Ragdoll when hit?", // Pretty name shown inside the ingame settings menu. Can be stringtable entry.
     "VCOM SETTINGS", // Pretty name of the category where the setting can be found. Can be stringtable entry.
-		true,// data for this setting:
+	true,// data for this setting:
     true, // "_isGlobal" flag. Set this to true to always have this setting synchronized between all clients in multiplayer
     {  
         params ["_value"];
@@ -245,12 +258,173 @@ if !(CBAACT) exitwith {};
     "SLIDER", // setting type
     "Mag count AI begin to look for additional mags.", // Pretty name shown inside the ingame settings menu. Can be stringtable entry.
     "VCOM SETTINGS", // Pretty name of the category where the setting can be found. Can be stringtable entry.
-    [2,10,5,0], // data for this setting:
+    [2,10,5,0], // data for this setting: [min, max, default, number of shown trailing decimals]
     true, // "_isGlobal" flag. Set this to true to always have this setting synchronized between all clients in multiplayer
     {  
         params ["_value"];
         VCM_AIMagLimit = _value;
     } // function that will be executed once on mission start and every time the setting is changed.
 ] call CBA_Settings_fnc_init;
+
+//Ryd FFE settings
+
+[
+    "RydFFE_Active", // Internal setting name, should always contain a tag! This will be the global variable which takes the value of the setting.
+    "CHECKBOX", // setting type
+    "FFE Active (Replaces VCOM Artillery)", // Pretty name shown inside the ingame settings menu. Can be stringtable entry.
+    "Fire For Effect", // Pretty name of the category where the setting can be found. Can be stringtable entry.
+    true, // data for this setting: [min, max, default, number of shown trailing decimals]
+    true, // "_isGlobal" flag. Set this to true to always have this setting synchronized between all clients in multiplayer
+    {  
+        params ["_value"];
+		VCM_FFEARTILLERY = _value;
+    } // function that will be executed once on mission start and every time the setting is changed.
+] call CBA_Settings_fnc_init;
+
+[
+    "RydFFE_Debug", // Internal setting name, should always contain a tag! This will be the global variable which takes the value of the setting.
+    "CHECKBOX", // setting type
+    "FFE Debug", // Pretty name shown inside the ingame settings menu. Can be stringtable entry.
+    "Fire For Effect", // Pretty name of the category where the setting can be found. Can be stringtable entry.
+    false, // data for this setting: [min, max, default, number of shown trailing decimals]
+    true, // "_isGlobal" flag. Set this to true to always have this setting synchronized between all clients in multiplayer
+    {  
+        params ["_value"];
+		RydFFE_Debug = _value;
+    } // function that will be executed once on mission start and every time the setting is changed.
+] call CBA_Settings_fnc_init;
+
+[
+    "RydFFE_FO_string", // Internal setting name, should always contain a tag! This will be the global variable which takes the value of the setting.
+    "EDITBOX", // setting type
+    ["FFE Forward Observer"], // Pretty name shown inside the ingame settings menu. Can be stringtable entry.
+    "Fire For Effect", // Pretty name of the category where the setting can be found. Can be stringtable entry.
+    "", // data for this setting: [min, max, default, number of shown trailing decimals]
+    true, // "_isGlobal" flag. Set this to true to always have this setting synchronized between all clients in multiplayer
+    {  
+        params ["_value"];
+		RydFFE_FO = [];
+		{RydFFE_FO pushBack (missionNamespace getVariable _x)} forEach (_value splitstring ", ");
+    } // function that will be executed once on mission start and every time the setting is changed.
+] call CBA_Settings_fnc_init;
+
+[
+    "RydFFE_FOClass_string", // Internal setting name, should always contain a tag! This will be the global variable which takes the value of the setting.
+    "EDITBOX", // setting type
+    ["FFE Forward Observer Classes", "this array holds class names (lowercase only!) of leaders of groups, that will be automatically added to the RydFFE_FO array, if that array already is not empty (means if limited spotting is active)"], // Pretty name shown inside the ingame settings menu. Can be stringtable entry.
+    "Fire For Effect", // Pretty name of the category where the setting can be found. Can be stringtable entry.
+    "i_spotter_f, o_spotter_f, b_spotter_f, o_recon_jtac_f, b_recon_jtac_f, i_sniper_f, o_sniper_f, b_sniper_f, i_soldier_m_f, o_soldier_m_f, b_g_soldier_m_f, b_soldier_m_f, o_recon_m_f, b_recon_m_f, o_soldieru_m_f, i_uav_01_f, i_uav_02_cas_f, i_uav_02_f, o_uav_01_f, o_uav_02_cas_f, o_uav_02_f, b_uav_01_f, b_uav_02_cas_f, b_uav_02_f", // data for this setting: [min, max, default, number of shown trailing decimals]
+    true, // "_isGlobal" flag. Set this to true to always have this setting synchronized between all clients in multiplayer
+    {  
+        params ["_value"];
+		RydFFE_FOClass = _value splitstring ", ";
+    } // function that will be executed once on mission start and every time the setting is changed.
+] call CBA_Settings_fnc_init;
+
+[
+    "RydFFE_OnePhase", // Internal setting name, should always contain a tag! This will be the global variable which takes the value of the setting.
+    "CHECKBOX", // setting type
+    ["FFE One Phase", "By default, spotters will fire 1/6 of salvo as adjustment salvo, with the next one being 'Fire For Effect'. Enabling this skips that."], // Pretty name shown inside the ingame settings menu. Can be stringtable entry.
+    "Fire For Effect", // Pretty name of the category where the setting can be found. Can be stringtable entry.
+    false, // data for this setting: [min, max, default, number of shown trailing decimals]
+    true, // "_isGlobal" flag. Set this to true to always have this setting synchronized between all clients in multiplayer
+    {  
+        params ["_value"];
+		RydFFE_OnePhase = _value;
+    } // function that will be executed once on mission start and every time the setting is changed.
+] call CBA_Settings_fnc_init;
+
+[
+    "RydFFE_2PhWithoutFO", // Internal setting name, should always contain a tag! This will be the global variable which takes the value of the setting.
+    "CHECKBOX", // setting type
+    ["FFE Two Phase without Forward Observer", "Will fire in two phase mode also in 'Unlimited Spotting Mode', as described above."], // Pretty name shown inside the ingame settings menu. Can be stringtable entry.
+    "Fire For Effect", // Pretty name of the category where the setting can be found. Can be stringtable entry.
+    false, // data for this setting: [min, max, default, number of shown trailing decimals]
+    true, // "_isGlobal" flag. Set this to true to always have this setting synchronized between all clients in multiplayer
+    {  
+        params ["_value"];
+		RydFFE_2PhWithoutFO = _value;
+    } // function that will be executed once on mission start and every time the setting is changed.
+] call CBA_Settings_fnc_init;
+
+[
+    "RydFFE_Acc", // Internal setting name, should always contain a tag! This will be the global variable which takes the value of the setting.
+    "SLIDER", // setting type
+    ["FFE Accuracy", "Multiplier of whole salvo drift radius. The bigger value, the bigger the radius."], // Pretty name shown inside the ingame settings menu. Can be stringtable entry.
+    "Fire For Effect", // Pretty name of the category where the setting can be found. Can be stringtable entry.
+    [1, 4, 2, 0], // data for this setting: [min, max, default, number of shown trailing decimals]
+    true, // "_isGlobal" flag. Set this to true to always have this setting synchronized between all clients in multiplayer
+    {  
+        params ["_value"];
+		RydFFE_Acc = _value;
+    } // function that will be executed once on mission start and every time the setting is changed.
+] call CBA_Settings_fnc_init;
+
+[
+    "RydFFE_Safe", // Internal setting name, should always contain a tag! This will be the global variable which takes the value of the setting.
+    "SLIDER", // setting type
+    ["FFE Safe Zone", "Salvo will be not planned for coordinates located within this radius (in meters) around any allied group leader."], // Pretty name shown inside the ingame settings menu. Can be stringtable entry.
+    "Fire For Effect", // Pretty name of the category where the setting can be found. Can be stringtable entry.
+    [20, 300, 100, 0], // data for this setting: [min, max, default, number of shown trailing decimals]
+    true, // "_isGlobal" flag. Set this to true to always have this setting synchronized between all clients in multiplayer
+    {  
+        params ["_value"];
+		RydFFE_Safe = _value;
+    } // function that will be executed once on mission start and every time the setting is changed.
+] call CBA_Settings_fnc_init;
+
+[
+    "RydFFE_Monogamy", // Internal setting name, should always contain a tag! This will be the global variable which takes the value of the setting.
+    "CHECKBOX", // setting type
+    ["FFE Monogamy", "Each group can only be targeted by one battery."], // Pretty name shown inside the ingame settings menu. Can be stringtable entry.
+    "Fire For Effect", // Pretty name of the category where the setting can be found. Can be stringtable entry.
+    true, // data for this setting: [min, max, default, number of shown trailing decimals]
+    true, // "_isGlobal" flag. Set this to true to always have this setting synchronized between all clients in multiplayer
+    {  
+        params ["_value"];
+		RydFFE_Monogamy = _value;
+    } // function that will be executed once on mission start and every time the setting is changed.
+] call CBA_Settings_fnc_init;
+
+[
+    "RydFFE_Amount", // Internal setting name, should always contain a tag! This will be the global variable which takes the value of the setting.
+    "SLIDER", // setting type
+    "FFE Barrage Size", // Pretty name shown inside the ingame settings menu. Can be stringtable entry.
+    "Fire For Effect", // Pretty name of the category where the setting can be found. Can be stringtable entry.
+    [1, 12, 6, 0], // data for this setting: [min, max, default, number of shown trailing decimals]
+    true, // "_isGlobal" flag. Set this to true to always have this setting synchronized between all clients in multiplayer
+    {  
+        params ["_value"];
+		RydFFE_Amount = _value;
+    } // function that will be executed once on mission start and every time the setting is changed.
+] call CBA_Settings_fnc_init;
+
+[
+    "RydFFE_ShellView", // Internal setting name, should always contain a tag! This will be the global variable which takes the value of the setting.
+    "CHECKBOX", // setting type
+    ["FFE Shellview", "if set to true, in debug mode there is available a tool, that allows to watch shells during their flight marked with orange “drops” in chosen meter radius around position clicked (LMB) on map. Shift + LMB removes that watching circle"], // Pretty name shown inside the ingame settings menu. Can be stringtable entry.
+    "Fire For Effect", // Pretty name of the category where the setting can be found. Can be stringtable entry.
+    false, // data for this setting: [min, max, default, number of shown trailing decimals]
+    true, // "_isGlobal" flag. Set this to true to always have this setting synchronized between all clients in multiplayer
+    {  
+        params ["_value"];
+		RydFFE_ShellView = _value;
+    } // function that will be executed once on mission start and every time the setting is changed.
+] call CBA_Settings_fnc_init;
+
+[
+    "RydFFE_FoAccGain", // Internal setting name, should always contain a tag! This will be the global variable which takes the value of the setting.
+    "SLIDER", // setting type
+    ["FFE Forward Observer Accuracy Gain", "Additional accuracy multiplier in second, FFE step of fire mission due to adjustments after first step. The lesser value, the greater accuracy, must be not negative. It is multiplied by spotter adjustments factor for FFE stage: (0.2 + (random 0.2)) that changes salvo drift radius."], // Pretty name shown inside the ingame settings menu. Can be stringtable entry.
+    "Fire For Effect", // Pretty name of the category where the setting can be found. Can be stringtable entry.
+    [0.5,3,1,1], // data for this setting: [min, max, default, number of shown trailing decimals]
+    true, // "_isGlobal" flag. Set this to true to always have this setting synchronized between all clients in multiplayer
+    {  
+        params ["_value"];
+		RydFFE_FoAccGain = _value;
+    } // function that will be executed once on mission start and every time the setting is changed.
+] call CBA_Settings_fnc_init;
+
+diag_log "VCOM: Loaded CBA settings";
 
 };

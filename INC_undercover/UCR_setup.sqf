@@ -18,7 +18,7 @@ _easyMode = true;                       //Disguise checks will also reveal if th
 
 _racism = true;                         //Enemies will notice if you aren't the race of the faction you're pretending to be (making you easier to detect if nothing is covering your face)
 _racProfFacCiv = 1;                     //(Number) Multiplies the effect of racial profiling. Lower this number to simulate more multicultural civilian population
-_racProfFacEny = 1;                     //(Number) Multiplies the effect of racial profiling. Lower this number to simulate more multicultural enemy forces
+_racProfFacEny = 2;                     //(Number) Multiplies the effect of racial profiling. Lower this number to simulate more multicultural enemy forces
 
 _regEnySide = east;                     //Units of this side will be classed as regular enemies (Side: can be east, west, independent) - if you don't need this, comment the line out (i.e. put // before _regEnySide, as in //_regEnySide = east;).
 _regBarbaric = true;                   //(Bool - true or false) Will this side lash out on civilians if it takes casualties and doesn't know the attacker?
@@ -32,19 +32,19 @@ _globalSuspicionModifier = 1;           //Scales the level of suspicion of enemi
 
 //-------------------------Civilian Disguise settings-------------------------
 
-_civFactions = ["CIV_F","CIV_F_TANOA"]; //Array of factions whose vests are safe for undercover units to wear
+_civFactions = ["CIV_F"]; //Array of factions whose vests are safe for undercover units to wear
 
 //(Array of classnames) Safe vests (on top of the specific factions above - useful if faction has randomisation script or to add items that are not used by the faction)
 _civilianVests = ["V_pocketed_black_F","V_Pocketed_coyote_F","V_Pocketed_olive_F","V_LegStrapBag_blk_F","V_LegStrapBag_coyote_F","V_LegStrapBag_olive_F","V_Rangemaster_belt"];
 
 //(Array of classnames) Safe uniforms (on top of the specific factions above - useful if faction has randomisation script or to add items that are not used by the faction)
-_civilianUniforms = ["U_BG_Guerilla2_2","U_BG_Guerilla2_1","U_BG_Guerilla2_3","U_I_C_Soldier_Bandit_4_F","U_I_C_Soldier_Bandit_1_F","U_I_C_Soldier_Bandit_2_F","U_I_C_Soldier_Bandit_5_F","U_I_C_Soldier_Bandit_3_F"];
+_civilianUniforms = [];
 
 //(Array of classnames) Safe headgear (will automatically include civilian headgear classes - useful if faction has randomisation script or to add items that are not used by the faction)
 _civilianHeadgear = [];
 
 //(Array of classnames) Safe backpacks (will automatically include civilian backpack classes - useful if faction has randomisation script or to add items that are not used by the faction)
-_civilianBackpacks = ["B_FieldPack_blk","B_FieldPack_cbr","B_FieldPack_khk","G_FieldPack_Medic","B_Carryall_cbr","B_Carryall_khk","B_Kitbag_cbr","B_Kitbag_rgr","B_Kitbag_sgg","B_Respawn_Sleeping_bag_blue_F","B_Respawn_Sleeping_bag_brown_F","B_Respawn_TentDome_F","B_Respawn_TentA_F"];
+_civilianBackpacks = ["B_FieldPack_blk","B_FieldPack_cbr","B_FieldPack_khk","B_Carryall_cbr","B_Carryall_khk","B_Kitbag_cbr","B_Kitbag_rgr"];
 
 //(Array of classnames) Safe vehicles to drive in (automatically includes vehicles from the civilian factions above).
 _civilianVehicleArray = [];
@@ -88,13 +88,13 @@ _highSecMarkers = ["high_security_zone_1","high_security_zone_2","high_security_
 
 _highSecInstantHostile = false;         // If true, units entering high security areas with the wrong uniform will be instantly deemed hostile by enemy forces. If false, it will be highly suspicious.
 
-_highSecVehicles = ["CIGT_Prowler","B_GEN_Offroad_01_gen_F","O_CNAirborne_CS_VP4_01","O_CNAirborne_BJ_2022_Patrol_01","O_CNAirborne_BJ_2022_01","O_CNAirborne_EQ_2050_Recon_MG_01","O_CNAirborne_EQ_2050_Recon_GL_01","O_CNAirborne_EQ_2050_MG_01","O_CNAirborne_EQ_2050_GL_01","O_CNAirborne_EQ_2050_ATGM_01","O_CNAirborne_EQ_2050_UAV_Controller_01","O_CNAirborne_EQ_2050_MED_01","O_CNAirborne_EQ_2050_HQ_01"];                  // (Array of classnames) Vehicles that can enter high security areas without raising suspicion (uniforms will still be noticed according to how open the vehicle is)
+_highSecVehicles = ["O_CNAirborne_BJ_2022_Patrol_01","O_CNAirborne_BJ_2022_01","O_CNAirborne_EQ_2050_UAV_Controller_01","O_CNAirborne_EQ_2050_MED_01","O_CNAirborne_EQ_2050_HQ_01"];                  // (Array of classnames) Vehicles that can enter high security areas without raising suspicion (uniforms will still be noticed according to how open the vehicle is)
 
 _highSecurityUniforms = ["U_C_Journalist","U_C_Scientist","U_B_GEN_Commander_F","U_B_CTRG_Soldier_F","PLA_Uniform_PLAWOOD2","PLA_CombatUniform_SW","PLA_CombatUniform_SG","PLA_CombatUniform_SGCB","PLA_CombatUniform_SWCB"];             // (Array of classnames) Uniforms that allow entry into high security areas (defined by high security markers)
 
-_highSecItemCheck = true;               // Check for disallowed items that aren't in the permitted list? Each non-permitted item will incur a suspicion penality. Set to false if high security checks just include uniform only.
+_highSecItemCheck = false;               // Check for disallowed items that aren't in the permitted list? Each non-permitted item will incur a suspicion penality. Set to false if high security checks just include uniform only.
 
-_highSecItems = ["H_Cap_police","H_Beret_gen_F","H_MilCap_gen_F","V_TacVest_gen_F","V_TacVest_blk_POLICE","PLA_T15Vest_RD","PLAFOR_Vest","V_TacVestIR_blk0","V_PlateCarrier2_blk","V_PlateCarrierH_CTRG"];                     // (Array of classnames) List of items such as vests, headgear, hats etc., that won't cause suspicion in high security areas (only works on foot for now)
+_highSecItems = [];                     // (Array of classnames) List of items such as vests, headgear, hats etc., that won't cause suspicion in high security areas (only works on foot for now)
 
 _hsItChkOutside = true;                 // The high security item check will occur if wearing a high security uniform even in non-high security zones. Useful if the high security uniform is, for example, a businessman or scientist, who would look weird carrying a gun and helmet.
 
@@ -111,13 +111,13 @@ You can also dismiss your new teammates and they will leave your group and carry
 */
 
 _civRecruitEnabled = true;          //(Bool - true or false) Set this to false to prevent undercover units from recruiting civilians
-_armedCivPercentage = 70;           //(Number - 0 to 100) Max percentage of civilians armed with weapons from the array below, either on their person or in their backpacks (will only work if _civRecruitEnabled is set to true, otherwise this is ignored)
+_armedCivPercentage = 20;           //(Number - 0 to 100) Max percentage of civilians armed with weapons from the array below, either on their person or in their backpacks (will only work if _civRecruitEnabled is set to true, otherwise this is ignored)
 
 //Weapon classnames for armed civilians (array of classnames)
 _civWpnArray = ["hlc_Pistol_M11","hlc_rifle_M1903A1"];
 
 //Items that civilians may carry
-_civItemArray = ["ACE_Cellphone","ACE_Banana","ACE_Flashlight_KSF1","ACE_SpraypaintBlack","itemRadio","ACE_RangeCard","ACE_key_civ","ACE_key_lockpick","ACE_fieldDressing"];
+_civItemArray = ["ACE_Cellphone","ACE_Flashlight_KSF1","ACE_SpraypaintBlack","itemRadio","ACE_RangeCard","ACE_key_civ","ACE_key_lockpick","ACE_fieldDressing"];
 
 //Civilian backpack classes (array of classnames)
 _civPackArray = ["B_FieldPack_blk","B_FieldPack_cbr","B_FieldPack_khk","B_Carryall_cbr"];
