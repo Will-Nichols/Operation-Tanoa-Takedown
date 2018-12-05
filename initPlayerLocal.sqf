@@ -9,7 +9,4 @@ player addMPEventHandler ["MPRespawn", {
 	_respawnPos
 }]; 
 
-if (player getVariable ["isSneaky",false]) then {
-
-    [player] execVM "INC_undercover\Scripts\initUCR.sqf";
-};
+[player] execVM "INC_undercover\Scripts\initUCR.sqf";
