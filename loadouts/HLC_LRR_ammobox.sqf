@@ -1,7 +1,7 @@
 //_this execVM "loadouts\HLC_LRR_ammobox.sqf";
 
 if(!isServer) exitWith {}; 
-_crate = _this;
+_crate = HLC_LRR_ammobox;
  
 	{ 
 		clearMagazineCargoGlobal _crate; 
