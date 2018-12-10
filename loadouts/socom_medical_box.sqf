@@ -1,9 +1,8 @@
 //this = execVM "loadouts\socom_medical_box.sqf";
 
 if(!isServer) exitWith {}; 
-_crate = _this;
+_crate = socom_medical_box;
  
-	{ 
 		clearMagazineCargoGlobal _crate; 
 		clearWeaponCargoGlobal _crate; 
 		clearItemCargoGlobal _crate; 
@@ -24,4 +23,3 @@ _crate = _this;
 			_crate addItemCargoGlobal ["ACE_surgicalKit",50];
 			_crate addItemCargoGlobal ["VSM_MulticamTropic_Backpack_Kitbag",5];
 			_crate addItemCargoGlobal ["VSM_MulticamTropic_carryall",5];
-};

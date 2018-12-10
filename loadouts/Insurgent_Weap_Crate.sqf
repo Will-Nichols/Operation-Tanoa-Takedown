@@ -1,9 +1,8 @@
 //this = execVM "loadouts\Insurgent_Weap_Crate.sqf";
 
 if(!isServer) exitWith {};
-_crate = _this; 
+_crate = Insurgent_Weap_Crate; 
 
-	{ 
 		_crate; clearMagazineCargoGlobal 
 		_crate; clearWeaponCargoGlobal 
 		_crate; clearItemCargoGlobal 
@@ -15,4 +14,4 @@ _crate = _this;
 			_crate addMagazineCargoGlobal ["hlc_5rnd_3006_1903",5000];
  			_crate addMagazineCargoGlobal ["rpa_mag_30x45acp_MHP",1000]; 
 			_crate addMagazineCargoGlobal ["ACE_30Rnd_556x45_Stanag_M995_AP_mag",3000];
-	};
+

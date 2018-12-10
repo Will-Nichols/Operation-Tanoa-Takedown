@@ -1,12 +1,11 @@
 //this = execVM "loadouts\SOCOM_Supplybox.sqf";
 
 if(!isServer) exitWith {};
-_crate = _this; 
+_crate = SOCOM_Supplybox; 
 
-	{ 
-		_crate; clearMagazineCargoGlobal 
-		_crate; clearWeaponCargoGlobal 
-		_crate; clearItemCargoGlobal 
+		_crate clearMagazineCargoGlobal;
+		_crate clearWeaponCargoGlobal;
+		_crate clearItemCargoGlobal; 
 
 			_crate addItemCargoGlobal ["ACE_HuntIR_monitor",5];
 			_crate addWeaponCargoGlobal ["SMA_HK417_16in",5];
@@ -52,6 +51,4 @@ _crate = _this;
 			_crate addMagazineCargoGlobal ["hlc_30rnd_556x45_TDim",500];
 			_crate addMagazineCargoGlobal ["hlc_30rnd_556x45_S_PMAG",500];
 			_crate addMagazineCargoGlobal ["hlc_30rnd_556x45_M_PMAG",500];
-			_crate addMagazineCargoGlobal ["1Rnd_HE_Grenade_shell",2500];	
-
-	};
+			_crate addMagazineCargoGlobal ["1Rnd_HE_Grenade_shell",2500];

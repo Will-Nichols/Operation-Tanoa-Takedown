@@ -3,7 +3,7 @@
 if(!isServer) exitWith {}; 
 _crate = HLC_LRR_ammobox;
  
-	{ 
+
 		clearMagazineCargoGlobal _crate; 
 		clearWeaponCargoGlobal _crate; 
 		clearItemCargoGlobal _crate; 
@@ -20,4 +20,3 @@ _crate = HLC_LRR_ammobox;
 			_crate addWeaponCargoGlobal ["hlc_5rnd_300WM_BTSP_AWM",20];
 			_crate addWeaponCargoGlobal ["hlc_5rnd_300WM_SBT_AWM",20];
 			_crate addWeaponCargoGlobal ["hlc_5rnd_300WM_T_AWM",20];
-};

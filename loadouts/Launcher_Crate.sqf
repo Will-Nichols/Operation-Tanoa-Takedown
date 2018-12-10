@@ -1,9 +1,9 @@
 //this execVM "loadouts\Launcher_Crate.sqf";
 
 if(!isServer) exitWith {};
-_crate = _this; 
+_crate = Launcher_Crate; 
 
-	{ 
+
 		_crate; clearMagazineCargoGlobal 
 		_crate; clearWeaponCargoGlobal 
 		_crate; clearItemCargoGlobal 
@@ -45,5 +45,3 @@ _crate = _this;
 			_crate addMagazineCargoGlobal ["rhsusf_mag_6Rnd_M397_HET",150];
 			_crate addMagazineCargoGlobal ["rhsusf_mag_6Rnd_M576_Buckshot",150];
 			_crate addMagazineCargoGlobal ["rhsusf_mag_6Rnd_M441_HE",150];
-
-	};
