@@ -4,7 +4,7 @@
 waitUntil {!isNull player};
 _unit = _this select 0;
 
-comment "Remove existing items";
+//comment "Remove existing items";
 removeAllWeapons _this;
 removeAllItems _this;
 removeAllAssignedItems _this;
@@ -14,7 +14,7 @@ removeBackpack _this;
 removeHeadgear _this;
 removeGoggles _this;
 
-comment "Add containers";
+//comment "Add containers";
 _this forceAddUniform "U_BG_Guerilla3_1";
 for "_i" from 1 to 4 do {_this addItemToUniform "ACE_fieldDressing";};
 for "_i" from 1 to 2 do {_this addItemToUniform "ACE_elasticBandage";};
@@ -32,21 +32,21 @@ _this addItemToVest "ACE_EarPlugs";
 _this addHeadgear "H_Booniehat_tan";
 _this addGoggles "G_Aviator";
 
-comment "Add weapons";
+//comment "Add weapons";
 _this addWeapon "hlc_Pistol_M11";
 _this addHandgunItem "HLC_optic228_Siglite";
 _this addWeapon "Binocular";
 
-comment "Add items";
+//comment "Add items";
 _this linkItem "ItemMap";
 _this linkItem "ItemCompass";
 _this linkItem "ItemWatch";
 _this linkItem "tf_anprc148jem";
 _this linkItem "ItemGPS";
 
-comment "Set identity";
+//comment "Set identity";
 _this setFace "TanoanHead_A3_03";
 _this setSpeaker "Male02FRE";
 
-comment "Set Medical Class";
+//comment "Set Medical Class";
 _this setVariable ["ace_medical_medicClass",2];

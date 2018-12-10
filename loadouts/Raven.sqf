@@ -4,7 +4,7 @@
 waitUntil {!isNull player};
 _unit = _this select 0;
 
-comment "Remove existing items";
+//comment "Remove existing items";
 removeAllWeapons _this;
 removeAllItems _this;
 removeAllAssignedItems _this;
@@ -14,7 +14,7 @@ removeBackpack _this;
 removeHeadgear _this;
 removeGoggles _this;
 
-comment "Add containers";
+//comment "Add containers";
 _this forceAddUniform "VSM_MulticamTropic_BDU_Camo";
 _this addItemToUniform "ACE_personalAidKit";
 for "_i" from 1 to 2 do {_this addItemToUniform "ACE_quikclot";};
@@ -48,14 +48,14 @@ for "_i" from 1 to 2 do {_this addItemToVest "hlc_13Rnd_9x19_SD_P228";};
 _this addHeadgear "rhsusf_hgu56p_visor";
 
 
-comment "Add weapons";
+//comment "Add weapons";
 _this addWeapon "hlc_pistol_P229R_Combat";
 _this addHandgunItem "hlc_muzzle_TiRant9S";
 _this addHandgunItem "hlc_acc_TLR1";
 _this addHandgunItem "HLC_Optic228_Docter_CADEX";
 _this addWeapon "Binocular";
 
-comment "Add items";
+//comment "Add items";
 _this linkItem "ItemMap";
 _this linkItem "ItemCompass";
 _this linkItem "ACE_Altimeter";
@@ -63,5 +63,5 @@ _this linkItem "tf_anprc152";
 _this linkItem "ItemGPS";
 _this linkItem "A3_GPNVG18b_REC_BLK_F";
 
-comment "Set Medical Class";
+//comment "Set Medical Class";
 _this setVariable ["ace_medical_medicClass",2];

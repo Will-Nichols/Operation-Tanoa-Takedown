@@ -25,14 +25,14 @@ _regBarbaric = true;                   //(Bool - true or false) Will this side l
 _regDetectRadius = 8;                  //Default detection radius for regular troops (this will expand and contract based on weather, time of day, and how the undercover unit is acting - civilians within this radius will be under much more scrutinty)
 
 _asymEnySide = sideEmpty;               //Units of this side will be classed as asymetric enemies (Side: can be east, west, independent) - if you don't need this, use sideEmpty.
-_asymBarbaric = true;                   //(Bool - true or false) Will this side have a small chance of lashing out on civilians if it takes casualties and doesn't know the attacker?
+_asymBarbaric = false;                   //(Bool - true or false) Will this side have a small chance of lashing out on civilians if it takes casualties and doesn't know the attacker?
 _asymDetectRadius = 15;                 //Default detection radius for asym troops (this will expand and contract based on weather, time of day, and how the undercover unit is acting - civilians within this radius will be under much more scrutinty)
 
 _globalSuspicionModifier = .9;           //Scales the level of suspicion of enemies. 1 is default, 2 means units are twice as likely to see through undercover unit's disguises, 0.5 means half as likely etc.
 
 //-------------------------Civilian Disguise settings-------------------------
 
-_civFactions = ["CIV_F","CIV_F_TANOA"]; //Array of factions whose vests are safe for undercover units to wear
+_civFactions = ["CIV_F"]; //Array of factions whose vests are safe for undercover units to wear
 
 //(Array of classnames) Safe vests (on top of the specific factions above - useful if faction has randomisation script or to add items that are not used by the faction)
 _civilianVests = [];
@@ -61,16 +61,16 @@ _incogFactions = ["O_CNAirborne","O_TAPOLICE"]; //Array of enemy factions whose 
 _trespassMarkers = [];
 
 //(Array of classnames) Safe vests (on top of the specific factions above - useful if faction has randomisation script or to add items that are not used by the faction)
-_incognitoVests = [];
+_incognitoVests = ["V_Press_F","V_Press_AAN_F"];
 
 //(Array of classnames) Safe headgear (will automatically include incog headgear classes - useful if faction has randomisation script or to add items that are not used by the faction)
-_incognitoHeadgear = [];
+_incognitoHeadgear = ["H_Cap_Press","H_PASGT_basic_blue_press_F","H_PASGT_neckprot_blue_press_F"];
 
 //(Array of classnames) Safe backpacks (will automatically include incog backpack classes - useful if faction has randomisation script or to add items that are not used by the faction)
 _incognitoBackpacks = [];
 
 //(Array of classnames) Safe uniforms (on top of the specific factions above - useful if faction has randomisation script or to add items that are not used by the faction)
-_incognitoUniforms = [];
+_incognitoUniforms = ["U_C_Scientist","U_C_WorkerCoveralls","U_C_Journalist","U_C_Paramedic_01_F"];
 
 _incogVehArray = []; //(Array of classnames) Additional incognito vehicles (vehicles from the faction above will automatically count, as will all _highSecVehicles)
 
@@ -84,17 +84,17 @@ All high security zones are automatically considered non-civilian territory, but
 In these settings, you can .
 */
 
-_highSecMarkers = ["highsecurity1","highsecurity2","highsecurity3","highsecurity4","highsecurity5"]; //Names of additional markers for areas that are designated high security zones that require specific uniforms to enter without raising suspicion (any with "INC_highSec" - case sensitive - somewhere in the marker name will automatically be included)
+_highSecMarkers = []; //Names of additional markers for areas that are designated high security zones that require specific uniforms to enter without raising suspicion (any with "INC_highSec" - case sensitive - somewhere in the marker name will automatically be included)
 
 _highSecInstantHostile = false;         // If true, units entering high security areas with the wrong uniform will be instantly deemed hostile by enemy forces. If false, it will be highly suspicious.
 
 _highSecVehicles = [];                  // (Array of classnames) Vehicles that can enter high security areas without raising suspicion (uniforms will still be noticed according to how open the vehicle is)
 
-_highSecurityUniforms = [];             // (Array of classnames) Uniforms that allow entry into high security areas (defined by high security markers)
+_highSecurityUniforms = ["U_C_Scientist","U_C_WorkerCoveralls","U_C_Journalist","PLA_CombatUniform_SWCB","PLA_CombatUniform_SGCB","PLA_CombatUniform_SW","PLA_CombatUniform_SG","PLA_Uniform_PLAFOR","U_C_Paramedic_01_F"];             // (Array of classnames) Uniforms that allow entry into high security areas (defined by high security markers)
 
 _highSecItemCheck = true;               // Check for disallowed items that aren't in the permitted list? Each non-permitted item will incur a suspicion penality. Set to false if high security checks just include uniform only.
 
-_highSecItems = [];                     // (Array of classnames) List of items such as vests, headgear, hats etc., that won't cause suspicion in high security areas (only works on foot for now)
+_highSecItems = ["H_Cap_Press","VME_PLA_Hat","V_Press_F","H_PASGT_basic_blue_press_F","H_PASGT_neckprot_blue_press_F","VME_PLAFOR_Hat","PLAFOR_Vest","PLA_T15Vest","PLA_T15Vest_RD","V_Press_AAN_F"];                     // (Array of classnames) List of items such as vests, headgear, hats etc., that won't cause suspicion in high security areas (only works on foot for now)
 
 _hsItChkOutside = true;                 // The high security item check will occur if wearing a high security uniform even in non-high security zones. Useful if the high security uniform is, for example, a businessman or scientist, who would look weird carrying a gun and helmet.
 
@@ -111,7 +111,7 @@ You can also dismiss your new teammates and they will leave your group and carry
 */
 
 _civRecruitEnabled = true;          //(Bool - true or false) Set this to false to prevent undercover units from recruiting civilians
-_armedCivPercentage = 20;           //(Number - 0 to 100) Max percentage of civilians armed with weapons from the array below, either on their person or in their backpacks (will only work if _civRecruitEnabled is set to true, otherwise this is ignored)
+_armedCivPercentage = 35;           //(Number - 0 to 100) Max percentage of civilians armed with weapons from the array below, either on their person or in their backpacks (will only work if _civRecruitEnabled is set to true, otherwise this is ignored)
 
 //Weapon classnames for armed civilians (array of classnames)
 _civWpnArray = ["hlc_Pistol_M11","hlc_rifle_M1903A1"];

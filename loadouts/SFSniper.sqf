@@ -4,7 +4,7 @@
 waitUntil {!isNull player};
 _unit = _this select 0;
 
-comment "Remove existing items";
+//comment "Remove existing items";
 removeAllWeapons _this;
 removeAllItems _this;
 removeAllAssignedItems _this;
@@ -14,7 +14,7 @@ removeBackpack _this;
 removeHeadgear _this;
 removeGoggles _this;
 
-comment "Add containers";
+//comment "Add containers";
 _this forceAddUniform "VSM_MulticamTropic_Camo_SS";
 _this addItemToUniform "ACE_Flashlight_XL50";
 _this addItemToUniform "ACE_MapTools";
@@ -55,7 +55,7 @@ for "_i" from 1 to 6 do {_this addItemToBackpack "SMA_20Rnd_762x51mm_Lapua_FMJ_S
 for "_i" from 1 to 2 do {_this addItemToBackpack "Laserbatteries";};
 _this addHeadgear "VSM_MulticamTropic_OPS_2";
 
-comment "Add weapons";
+//comment "Add weapons";
 _this addWeapon "SMA_HK417_16in";
 _this addPrimaryWeaponItem "sma_gemtech_one_blk";
 _this addPrimaryWeaponItem "SMA_ANPEQ15_BLK";
@@ -67,7 +67,7 @@ _this addHandgunItem "hlc_acc_TLR1";
 _this addHandgunItem "HLC_optic228_Siglite";
 _this addWeapon "Laserdesignator_01_khk_F";
 
-comment "Add items";
+//comment "Add items";
 _this linkItem "ItemMap";
 _this linkItem "ItemCompass";
 _this linkItem "ItemWatch";
@@ -75,6 +75,6 @@ _this linkItem "tf_anprc152";
 _this linkItem "ItemGPS";
 _this linkItem "A3_GPNVG18b_REC_BLK_F";
 
-comment "Set Medical Class";
+//comment "Set Medical Class";
 _this setVariable ["ace_medical_medicClass",2];
 

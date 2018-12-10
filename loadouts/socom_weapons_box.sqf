@@ -1,12 +1,13 @@
-//null = [this] execVM "loadouts\socom_weapons_box.sqf";
+//this = execVM "loadouts\socom_weapons_box.sqf";
 
 if(!isServer) exitWith {}; 
-_crate = _this select 0; 
+_crate = _this;
+ 
 	{ 
 		clearMagazineCargoGlobal _crate; 
 		clearWeaponCargoGlobal _crate; 
 		clearItemCargoGlobal _crate; 
-		clearBackpackCargoGlobal _crate;
+
 			
 			_crate addWeaponCargoGlobal ["SMA_HK416CUSTOMCQBafgB",20];
 			_crate addWeaponCargoGlobal ["SMA_HK416CUSTOMGLCQB_B",20];

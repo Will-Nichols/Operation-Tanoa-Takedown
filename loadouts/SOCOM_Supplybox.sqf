@@ -1,14 +1,14 @@
-//null = [this] execVM "loadouts\SOCOM_Supplybox.sqf";
+//this = execVM "loadouts\SOCOM_Supplybox.sqf";
 
 if(!isServer) exitWith {};
-_crate = _this select 0; 
+_crate = _this; 
 
 	{ 
 		_crate; clearMagazineCargoGlobal 
 		_crate; clearWeaponCargoGlobal 
 		_crate; clearItemCargoGlobal 
-		_crate; clearBackpackCargoGlobal 
 
+			_crate addItemCargoGlobal ["ACE_HuntIR_monitor",5];
 			_crate addWeaponCargoGlobal ["SMA_HK417_16in",5];
 			_crate addWeaponCargoGlobal ["SMA_HK416CUSTOMCQBafgB",20];
 			_crate addWeaponCargoGlobal ["hlc_pistol_P229R_Combat",20]; 
@@ -33,6 +33,7 @@ _crate = _this select 0;
 			_crate addWeaponCargoGlobal ["sma_gemtech_one_blk",20];
 			_crate addWeaponCargoGlobal ["optic_LRPS",5];
 			_crate addWeaponCargoGlobal ["HLC_bipod_UTGShooters",5];
+			_crate addMagazineCargoGlobal ["ACE_HuntIR_M203",100];
 			_crate addMagazineCargoGlobal ["SMA_20Rnd_762x51mm_M80A1_EPR_IR",1500];
 			_crate addMagazineCargoGlobal ["SMA_20Rnd_762x51mm_Lapua_FMJ_Subsonic_IR",500];
 			_crate addMagazineCargoGlobal ["hlc_13Rnd_9x19_B_P228",1500]; 

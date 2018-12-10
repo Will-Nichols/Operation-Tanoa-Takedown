@@ -23,7 +23,6 @@ DisabledAI = true;
 class Extended_PreInit_EventHandlers {
 	VCM_CBASettings = call compile preprocessFileLineNumbers "Vcom\Functions\VCM_CBASettings.sqf";
 };
-
 class Extended_InitPost_EventHandlers {
      class CAManBase {
 		init = "_this call (compile preprocessFileLineNumbers 'postInitXEH.sqf')";
@@ -32,8 +31,8 @@ class Extended_InitPost_EventHandlers {
 
 class CfgFunctions
 {
-	#include "INC_undercover\cfgFunctions.hpp"
 	#include "vcom\cfgFunctions.hpp"
+	#include "INC_undercover\cfgFunctions.hpp"
 };
 
 class CfgRemoteExec
@@ -43,7 +42,7 @@ class CfgRemoteExec
    {
        mode = 2;
        jip = 1;
-       #include "INC_undercover\functionsWhitelist.hpp"
+	   #include "INC_undercover\functionsWhitelist.hpp"
 	   	class vcm_serverask { allowedTargets = 0;jip = 1; };
 		class VCM_PublicScript { allowedTargets = 0;jip = 1; };
 		class BIS_fnc_debugConsoleExec { allowedTargets = 0;jip = 1; };
