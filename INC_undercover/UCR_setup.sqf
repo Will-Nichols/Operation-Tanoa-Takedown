@@ -12,7 +12,7 @@ _undercoverUnitSide = independent;             //What side is/are the undercover
 
 //-------------------------General Settings-------------------------
 
-_debug = true;                         //Set to true for debug
+_debug = false;                         //Set to true for debug
 _fullAIfunctionality = true;            //Enable all checks on AI (may degrade performace very slightly for large groups, 15+)
 _easyMode = true;                       //Disguise checks will also reveal if the player's disguise is working or not
 
@@ -35,19 +35,19 @@ _globalSuspicionModifier = .9;           //Scales the level of suspicion of enem
 _civFactions = ["CIV_F"]; //Array of factions whose vests are safe for undercover units to wear
 
 //(Array of classnames) Safe vests (on top of the specific factions above - useful if faction has randomisation script or to add items that are not used by the faction)
-_civilianVests = [];
+_civilianVests = ["V_Press_F","V_Press_AAN_F"];
 
 //(Array of classnames) Safe uniforms (on top of the specific factions above - useful if faction has randomisation script or to add items that are not used by the faction)
-_civilianUniforms = [];
+_civilianUniforms = ["U_C_Scientist","U_C_WorkerCoveralls","U_C_Journalist","U_C_Paramedic_01_F"];
 
 //(Array of classnames) Safe headgear (will automatically include civilian headgear classes - useful if faction has randomisation script or to add items that are not used by the faction)
-_civilianHeadgear = [];
+_civilianHeadgear = ["H_Cap_Press","H_PASGT_basic_blue_press_F","H_PASGT_neckprot_blue_press_F"];
 
 //(Array of classnames) Safe backpacks (will automatically include civilian backpack classes - useful if faction has randomisation script or to add items that are not used by the faction)
 _civilianBackpacks = ["B_FieldPack_blk","B_FieldPack_cbr","B_FieldPack_khk","B_Carryall_khk","B_TacticalPack_blk","B_TacticalPack_rgr","B_TacticalPack_oli"];
 
 //(Array of classnames) Safe vehicles to drive in (automatically includes vehicles from the civilian factions above).
-_civilianVehicleArray = [];
+_civilianVehicleArray = ["B_T_LSV_01_unarmed_F","rhsusf_mrzr4_d","C_Truck_02_covered_F","C_Offroad_01_F","I_C_Boat_Transport_02_F"];
 
 _HMDallowed = false; //(Bool - true or false) Are HMDs (night vision goggles etc.) safe to wear for units pretending to be civilians? Set to false if wearing HMDs will cause suspicion (must be stored in backpack).
 
@@ -117,7 +117,7 @@ _armedCivPercentage = 35;           //(Number - 0 to 100) Max percentage of civi
 _civWpnArray = ["hlc_Pistol_M11","hlc_rifle_M1903A1"];
 
 //Items that civilians may carry
-_civItemArray = ["ACE_Cellphone","ACE_Flashlight_KSF1","ACE_SpraypaintBlack","itemRadio","ACE_RangeCard","ACE_key_civ","ACE_key_lockpick","ACE_fieldDressing"];
+_civItemArray = ["ACE_Cellphone","ACE_Banana","ACE_Flashlight_KSF1","ACE_SpraypaintBlack","itemRadio","ACE_RangeCard","ACE_key_civ","ACE_key_lockpick","ACE_fieldDressing","IEDUrbanSmall_F","IEDUrbanSmall_F"];
 
 //Civilian backpack classes (array of classnames)
-_civPackArray = ["B_FieldPack_blk","B_FieldPack_cbr","B_FieldPack_khk","B_Carryall_cbr"];
+_civPackArray = ["B_FieldPack_blk","B_FieldPack_cbr","B_FieldPack_khk","B_Carryall_khk","B_TacticalPack_blk","B_TacticalPack_rgr","B_TacticalPack_oli"];

@@ -5,11 +5,11 @@ OnLoadMission = "Tanoa Archipelago; Fiji";
 overviewPicture = "USSF_leading_patrol.jpg";
 
 class Header
-{
-	gameType = COOP; // Game type, see 'class' columns in the table below
-	minPlayers = 4; //min # of players the mission supports
-	maxPlayers = 74; //max # of players the mission supports
-};
+	{
+		gameType = COOP; // Game type, see 'class' columns in the table below
+		minPlayers = 4; //min # of players the mission supports
+		maxPlayers = 74; //max # of players the mission supports
+	};
 
 enableDebugConsole = 1;
 cba_settings_hasSettingsFile = 1;
@@ -20,34 +20,39 @@ respawnOnStart = -1;
 respawnDialog = 0;
 DisabledAI = true;
 
-class Extended_PreInit_EventHandlers {
-	VCM_CBASettings = call compile preprocessFileLineNumbers "Vcom\Functions\VCM_CBASettings.sqf";
-};
-class Extended_InitPost_EventHandlers {
-     class CAManBase {
-		init = "_this call (compile preprocessFileLineNumbers 'postInitXEH.sqf')";
+	class Extended_PreInit_EventHandlers {
+		#include "scripts\diwako\unknownwp\Extended_PreInit_EventHandlers.hpp"
+		VCM_CBASettings = call compile preprocessFileLineNumbers "Vcom\Functions\VCM_CBASettings.sqf";
 	};
-};
+	class Extended_InitPost_EventHandlers {
+		class CAManBase {
+		#include "scripts\diwako\unknownwp\Extended_PostInit_EventHandlers.hpp"
+			init = "_this call (compile preprocessFileLineNumbers 'postInitXEH.sqf')";
+		
+		};
+	};
 
 class CfgFunctions
-{
-	#include "vcom\cfgFunctions.hpp"
-	#include "INC_undercover\cfgFunctions.hpp"
-};
+	{
+			createShortcuts = 1;
+		#include "scripts\diwako\unknownwp\cfgFunctions.hpp"
+		#include "vcom\cfgFunctions.hpp"
+		#include "INC_undercover\cfgFunctions.hpp"
+	};
 
 class CfgRemoteExec
-{
-	// List of script functions allowed to be sent from client via remoteExec
-	class Functions
-   {
-       mode = 2;
-       jip = 1;
-	   #include "INC_undercover\functionsWhitelist.hpp"
-	   	class vcm_serverask { allowedTargets = 0;jip = 1; };
-		class VCM_PublicScript { allowedTargets = 0;jip = 1; };
-		class BIS_fnc_debugConsoleExec { allowedTargets = 0;jip = 1; };
-		class SpawnScript { allowedTargets = 0;jip = 1; };
-		class enableSimulationGlobal { allowedTargets = 0;jip = 1; };
-		class VCM_fnc_KnowAbout { allowedTargets = 0;jip = 1; };
-   };
+	{
+		// List of script functions allowed to be sent from client via remoteExec
+		class Functions
+	{
+		mode = 2;
+		jip = 1;
+		#include "INC_undercover\functionsWhitelist.hpp"
+			class vcm_serverask { allowedTargets = 0;jip = 1; };
+			class VCM_PublicScript { allowedTargets = 0;jip = 1; };
+			class BIS_fnc_debugConsoleExec { allowedTargets = 0;jip = 1; };
+			class SpawnScript { allowedTargets = 0;jip = 1; };
+			class enableSimulationGlobal { allowedTargets = 0;jip = 1; };
+			class VCM_fnc_KnowAbout { allowedTargets = 0;jip = 1; };
+	};
 };

@@ -571,6 +571,17 @@ force diwako_ragdoll_ai = true;
 force diwako_ragdoll_ragdolling = true;
 force diwako_ragdoll_server_only = true;
 
+// Diwako's Punish unknown weapon
+force diwako_unknownwp_add_weapons = "VME_PLA_QCW05","VME_PLA_QCW85","LMG_03_F,SMG_02_F,RPA_WEAP_M3A1,SMG_05_F,ARIFLE_TRG21_F,ARIFLE_TRG20_F,ARIFLE_TRG21__GL_F,SRIFLE_DMR_06_OLIVE_F,SRIFLE_DMR_06_CAMO_F";
+force diwako_unknownwp_briefing = true;
+force diwako_unknownwp_cooldown = 60;
+force diwako_unknownwp_dispersion_add = 25;
+force diwako_unknownwp_enable = true;
+force diwako_unknownwp_jam_explosion = 0.9;
+force diwako_unknownwp_jamchance_add = 0.5;
+force diwako_unknownwp_propagation = false;
+force diwako_unknownwp_reload_failure = 25;
+
 // NIArms
 force niarms_magSwitch = true;
 
@@ -608,10 +619,10 @@ force force tfar_radioCodesDisabled = true;
 force force TFAR_SameLRFrequenciesForSide = true;
 force force TFAR_SameSRFrequenciesForSide = true;
 force TFAR_setting_defaultFrequencies_lr_east = "";
-force force TFAR_setting_defaultFrequencies_lr_independent = "10,11,12,13,14";
+force force TFAR_setting_defaultFrequencies_lr_independent = "42,43,44,45,46";
 force force TFAR_setting_defaultFrequencies_lr_west = "36,37,38,39,41";
 force TFAR_setting_defaultFrequencies_sr_east = "";
-force force TFAR_setting_defaultFrequencies_sr_independent = "10,11,12,13,14";
+force force TFAR_setting_defaultFrequencies_sr_independent = "42,43,44,45,46";
 force force TFAR_setting_defaultFrequencies_sr_west = "36,37,38,39,41";
 force TFAR_setting_DefaultRadio_Airborne_east = "TFAR_mr6000l";
 force TFAR_setting_DefaultRadio_Airborne_Independent = "TFAR_anarc164";
