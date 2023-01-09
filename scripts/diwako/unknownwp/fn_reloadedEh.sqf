@@ -2,7 +2,7 @@
   Function: diwako_unknownwp_fnc_reloadedEh
 
   Description:
-    Reloaded evenhandler function
+    Reloaded eventhandler function
 
   Parameters:
     Reloaded EH arguments

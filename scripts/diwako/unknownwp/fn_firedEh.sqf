@@ -2,7 +2,7 @@
   Function: diwako_unknownwp_fnc_firedEh
 
   Description:
-    Fired evenhandler function
+    Fired eventhandler function
 
   Parameters:
     _weapon - Weapon that fired

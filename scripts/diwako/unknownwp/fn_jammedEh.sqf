@@ -2,7 +2,7 @@
   Function: diwako_unknownwp_fnc_jammedEh
 
   Description:
-    ACE weapon jammed evenhandler function
+    ACE weapon jammed eventhandler function
 
   Parameters:
     _unit   - Unit for which the weapon jammed
